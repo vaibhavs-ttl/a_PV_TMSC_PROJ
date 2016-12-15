@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AppBlue"
+         >
+
+        <TextView
+            android:id="@+id/lbr_text_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="Labour1" />
+
+        <EditText 
+            
+           
+            android:id="@+id/lbr_qty_data"
+            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:text="5"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            />
+        
+        <CheckBox 
+            
+            android:id="@+id/lbr_check_data"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+        	android:button="@drawable/estimate_state_check"    
+            
+            />
+        
+        
+        
+        
+    </TableRow>
+    
+    
+    
+    
+

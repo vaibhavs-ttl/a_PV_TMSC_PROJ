@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.ttl.customersocialapp.LoginActivity" xmlns:app="http://schemas.android.com/apk/res/com.ttl.customersocialapp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/tata_z" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tata_service_logo" />
+
+    <ImageView
+        android:id="@+id/sign_up"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/ll"
+        android:layout_alignTop="@+id/sign_in"
+        android:background="@drawable/sign_up" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <com.ttl.customersocialapp.FloatLabelLayout
+            android:id="@+id/txtuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@drawable/anim_edittext_layout"
+            android:paddingLeft="10dp"
+            app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+            <EditText
+                android:id="@+id/txtuser_id"
+                android:layout_width="230dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_layout"
+                android:ems="10"
+                android:hint="User ID"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor"
+                android:textCursorDrawable="@drawable/cursur"
+                android:textSize="16sp" />
+        </com.ttl.customersocialapp.FloatLabelLayout>
+
+        <com.ttl.customersocialapp.FloatLabelLayout
+            android:id="@+id/txtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtuser"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/anim_edittext_layout"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="4dp"
+            app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="230dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/txtuser"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_layout"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="12dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor"
+                android:textCursorDrawable="@drawable/cursur"
+                android:textSize="18sp" />
+        </com.ttl.customersocialapp.FloatLabelLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ll"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="15dp"
+        android:text="@string/forgotpass"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/sign_in"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/ll"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/sign_in" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_line" />
+
+    <ImageView
+        android:id="@+id/imggoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgfacebook"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gp" />
+
+    <ImageView
+        android:id="@+id/imgfacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:src="@drawable/fc" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Login With"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imggoogle"
+        android:layout_toRightOf="@+id/textView2"
+        android:src="@drawable/tt" />
+
+</RelativeLayout>

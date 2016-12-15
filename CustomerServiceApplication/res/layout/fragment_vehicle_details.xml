@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_medium_transparent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/Servicebbok"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/vehicle_details" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/yellow"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Vehicle Details"
+                    android:textColor="@color/black"
+                    android:textSize="10pt" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/addvehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_dark"
+                android:padding="10dip"
+                android:text="ADD VEHICLE"
+                android:textColor="@color/gray_light"
+                android:textSize="8pt" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@+id/addvehicle"
+                android:layout_below="@+id/addvehicle"
+                android:background="@color/yellow" />
+
+            <!-- <com.ttl.customersocialapp.InstantAutoComplete -->
+            <!-- android:id="@+id/spinner_chassisno" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_toRightOf="@+id/addvehicle" -->
+            <!-- android:alpha="0.6" -->
+            <!-- android:background="@drawable/bginstantautocomplete" -->
+            <!-- android:drawableRight="@drawable/downarrow" -->
+            <!-- android:dropDownHeight="wrap_content" -->
+            <!-- android:ems="10" -->
+            <!-- android:hint="Registration Number" -->
+            <!-- android:padding="10dip" -->
+            <!-- android:textColor="#ffffff" -->
+            <!-- android:textColorHint="#D9D9D9" -->
+            <!-- android:textSize="15sp" > -->
+
+
+            <!-- <requestFocus android:layout_width="match_parent" /> -->
+            <!-- </com.ttl.customersocialapp.InstantAutoComplete> -->
+
+            <Spinner
+                android:id="@+id/spinner_chassisNo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/addvehicle"
+                android:background="@drawable/anim_sipnner"
+                android:entries="@array/chassis_vehdet" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_vehicle"
+            android:layout_width="fill_parent"
+           
+            android:layout_height="100dip" />
+ 		<View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" />
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/blue_light_transparent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:src="@drawable/vehicledetails_1" />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dip"
+                android:src="@drawable/orangerightarrow" />
+
+            <TextView
+                android:id="@+id/text_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="VEHICLE DETAILS"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+       
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/err_veh" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="5dip" -->
+        <!-- android:text="Chassis Number" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:visibility="gone" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rltl1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/chassis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Chassis Number"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_chassis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll11"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Engine Number"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_engine"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll12"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Fuel Type"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_fuel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll13"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view3"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Model"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_model"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll14"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view4"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Variant"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_varient"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll15"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view5"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Color"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_color"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll16"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view6"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Sale Date"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_saledate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll17"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view7"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/wend_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Warranty End Date"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_wend_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll18"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view8"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Last Service Date"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_lastservicedate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll19"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/nextdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view9"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Next Service Due Date"
+                    android:textColor="@color/white" />
+				<RelativeLayout 
+				    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+				    >
+				       <TextView
+                    android:id="@+id/text_nextservicedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/white" />
+				       <ImageView 
+				           android:id="@+id/alarm"
+				           android:layout_width="30dp"
+                   		android:layout_height="30dp"
+                    android:padding="5dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/text_nextservicedate"
+                    android:src="@drawable/bellnotifications"
+				           />
+				    
+				</RelativeLayout>
+             
+                
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dateview"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/nextdate"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll1_10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateview"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Last Service Kms"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_lastserviceKM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll1_10"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll1_11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view10"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/lastservicedealer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Last Service Dealer"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_lastservicedealer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll1_11"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll1_12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view11"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Selling Dealer"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_dealer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll1_12"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll1_13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view12"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Selling Dealer Code"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_dealercode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+		<View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" />
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/blue_light_transparent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:src="@drawable/insurancealert_vehicle" />
+
+            <ImageView
+                android:id="@+id/img_arrow1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dip"
+                android:src="@drawable/orangerightarrow" />
+
+            <TextView
+                android:id="@+id/text_insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="TATA MOTORS INSURANCE"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+        </LinearLayout>
+		
+        <!-- <TextView -->
+        <!-- android:id="@+id/err_ins" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="5dip" -->
+        <!-- android:text="Chassis Number" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:visibility="gone" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rltl2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Insurance company name"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_company"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll21"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view13"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Policy Number"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_policy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll22"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view14"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Policy Start Date"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_policy_sdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll23"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view15"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Policy End Date"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_policy_edate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/blue_light_transparent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:src="@drawable/extendedwarranty" />
+
+            <ImageView
+                android:id="@+id/img_arrow2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dip"
+                android:src="@drawable/orangerightarrow" />
+
+            <TextView
+                android:id="@+id/text_warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="EXTENDED WARRANTY"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/err_warr" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="5dip" -->
+        <!-- android:text="Chassis Number" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:visibility="gone" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rltl3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll31"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/ew_policyNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="EW Policy Number"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_ew_policyNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll31"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll32"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view16"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="EW Start Date"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_war_sdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll32"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll33"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view17"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="EW End Date"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_war_edate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll33"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll34"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view18"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view18"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="EW Start KM"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_war_sKM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view18"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view19"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll34"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll35"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view19"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="EW End KM"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_war_eKM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="fill_parent"
+            android:layout_height="43dip"
+            android:background="@color/blue_light_transparent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:src="@drawable/amc_white" />
+
+            <ImageView
+                android:id="@+id/img_arrow3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dip"
+                android:src="@drawable/orangerightarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="ANNUAL MAINTENANCE CONTRACT"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+       <!--  <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rltl4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/AMCNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="AMC Number"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_amcNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dip"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view20"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/text_amcNumber"
+                android:background="@color/white" />
+
+            <ExpandableListView
+                android:id="@+id/amclist"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/view20"
+                android:layout_marginTop="5dp"
+                android:groupIndicator="@null"
+                android:nestedScrollingEnabled="true" />
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view20"
+                android:padding="5dip"
+                android:text="AMC Type"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_amctype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view20"
+                android:padding="5dip"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view21"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/text_amctype"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view21"
+                android:padding="5dip"
+                android:text="AMC Start Date"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_amc_sdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view21"
+                android:padding="5dip"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view22"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/text_amc_sdate"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view22"
+                android:padding="5dip"
+                android:text="AMC End Date"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_amc_eDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view22"
+                android:padding="5dip"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view23"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/text_amc_eDate"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view23"
+                android:padding="5dip"
+                android:text="AMC Start KM"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_amc_sKM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view23"
+                android:padding="5dip"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view24"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/text_amc_sKM"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view24"
+                android:padding="5dip"
+                android:text="AMC Description"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_amc_desr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view24"
+                android:padding="5dip"
+                android:textColor="@color/white" />
+            -->
+        </RelativeLayout>
+		<View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" />
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/blue_light_transparent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:src="@drawable/agreements" />
+
+            <ImageView
+                android:id="@+id/img_arrow4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dip"
+                android:src="@drawable/orangerightarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="24*7 AGREEMENTS"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+    <!--     <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" />
+ -->
+        <RelativeLayout
+            android:id="@+id/rltl5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/AgreeNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip"
+                android:text="Agreement Number"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/view25"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/AgreeNumber"
+                android:background="@color/white" />
+
+            <ExpandableListView
+                android:id="@+id/agreementlist"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/view25"
+                android:layout_marginTop="5dp"
+                android:groupIndicator="@null"
+                android:nestedScrollingEnabled="true" />
+        </RelativeLayout>
+		<View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/yellow" />
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/blue_light_transparent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:src="@drawable/complaintcustomerdetails" />
+
+            <ImageView
+                android:id="@+id/img_arrow5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dip"
+                android:src="@drawable/orangerightarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="CUSTOMER DETAILS"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/err_cust" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:padding="5dip" -->
+        <!-- android:text="Chassis Number" -->
+        <!-- android:textColor="@color/white" -->
+        <!-- android:visibility="gone" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rltl6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll61"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="First Name"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_fname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view131"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll61"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll62"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view131"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Last Name"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_lname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view141"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll62"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll63"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view141"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Phone Number"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view151"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll63"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll64"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view151"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:text="Address"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="5dip"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rltitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/yellow" >
+
+        <TextView
+            android:id="@+id/enginedialogtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:background="@color/yellow"
+            android:gravity="left|center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="My Preferred Dealer"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgclose"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtdelername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltitle"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:text="YASH AUTO-TATHAWADE"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtdeleradd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdelername"
+        android:gravity="center"
+       android:text="SR.NO 81/7,NEAR HOTELNEAR MUMBAI - BENGLURE HIGHWAY, MULSHI TALUKA PUNE-411033"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/relphonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtdeleradd"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/txtnumberlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:text="PHONE/MOBILE : "
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/delearphonenumberlist"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@+id/txtnumberlable"
+            android:dividerHeight="1dp" 
+            android:entries="@array/dealer"
+            >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relemail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relphonenumber"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/txtemaillable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="EMAIL : "
+            android:textStyle="bold" />
+        
+         <ListView
+            android:id="@+id/delearemaillist"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:entries="@array/dealer"
+            android:layout_toRightOf="@+id/txtemaillable"
+            android:dividerHeight="1dp" />
+        
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtdoyoulable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relemail"
+        android:layout_margin="10dp"
+        android:paddingLeft="5dp"
+        android:text="Do you want to remove this dealer ?"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdoyoulable"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnno"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_submit"
+            android:text="NO"
+            android:textColor="#F5F5F5"
+            
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnyes"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_submit"
+            android:text="YES"
+            android:textColor="#F5F5F5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

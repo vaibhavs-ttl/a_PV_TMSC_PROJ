@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Cost_EstimationFragment" >
+
+       <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"     
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@drawable/cost_calculator"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/txtmaintensnce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Cost Estimate Calculator"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+    </LinearLayout>
+   
+  	    <LinearLayout
+			android:id="@+id/blayout"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"			
+			android:layout_below="@+id/titlelayout"
+			android:layout_marginTop="5dp"
+			android:orientation="horizontal">
+        <Button
+					android:id="@+id/btnmanual"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"					
+					android:layout_weight="1"
+					android:text="Standard Repairs"
+				    android:background="@color/darkgray"
+				    android:textSize="17sp"
+				    android:gravity="center"
+				    android:textColor="@color/litegray" />
+
+  	  			<Button
+					android:id="@+id/btnfree"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"					
+					android:layout_weight="1"
+					android:background="@color/stronggray"
+					android:text="Free Services"
+				    android:textSize="17sp"
+				    android:gravity="center"
+				    android:textColor="@color/darkgray" />
+				
+				<Button
+					android:id="@+id/btnpaid"
+				    android:layout_width="0dp"
+					android:layout_height="match_parent"
+			     	android:text="Paid Services"
+			        android:background="@color/stronggray"
+			        android:textColor="@color/darkgray"
+			        android:textSize="17sp"
+			        android:gravity="center"
+					android:layout_weight="1" />
+	</LinearLayout>
+    
+     <LinearLayout
+			android:id="@+id/linebtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"			
+			android:layout_below="@+id/blayout"	
+			android:orientation="horizontal">
+
+
+				<Button
+					android:id="@+id/linebtnmanual"
+					android:layout_width="0dp"
+					android:layout_height="3dp"					
+					android:layout_weight="1"				
+				    android:background="@color/yellow" />
+				
+				<Button
+					android:id="@+id/linebtnpaid"
+				    android:layout_width="0dp"
+					android:layout_height="3dp"
+			     	android:background="@color/stronggray"
+			        android:layout_weight="1" />
+				<Button
+					android:id="@+id/linebtnfree"
+					android:layout_width="0dp"
+					android:layout_height="3dp"					
+					android:layout_weight="1"				
+				    android:background="@color/stronggray"/>
+	
+	</LinearLayout>
+    
+    
+	<RelativeLayout
+	    android:layout_below="@id/linebtn"
+	    android:id="@+id/relview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/alfa"
+	    />
+	
+</RelativeLayout>
+

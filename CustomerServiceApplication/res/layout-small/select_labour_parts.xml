@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/AppBlue"
+     
+     >
+     
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" 
+       
+        android:id="@+id/SelectLabourHader">
+
+        <!-- <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/news_and_updates" />
+ -->
+        <TextView
+            android:id="@+id/txtinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="Select Labour"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <SearchView
+        android:layout_below="@+id/SelectLabourHader"
+        android:id="@+id/labour_part_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        
+        android:background="@color/white"
+        android:hint="@string/search"
+        android:iconifiedByDefault="false"
+        android:padding="5dp"
+        android:queryHint="Search Labour" >
+        
+    </SearchView>
+    
+  <!--   <EditText 
+        
+        android:id="@+id/labour_part_search_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/search"
+        android:background="@color/white"
+        android:padding="5dp"
+      	android:layout_marginLeft="10dp"
+      	android:layout_marginRight="10dp"
+      	android:layout_marginTop="10dp"
+      	
+       />
+     -->
+    
+ <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:layout_below="@+id/labour_part_search_bar"/>
+ 
+ <LinearLayout 
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:id="@+id/list_header"
+     android:layout_below="@+id/labour_part_search_bar"
+     android:layout_marginTop="10dp"
+     android:background="@color/black"
+     >
+     
+     <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        
+        android:background="@color/white"/>
+     <TextView
+         android:layout_width="115dp"
+         android:layout_height="wrap_content"
+         
+         android:text="@string/desc"
+         android:padding="5dp"
+         android:gravity="center"
+         android:textColor="@color/white" />
+     
+     
+     <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="9dp"
+        android:background="@color/white"/>
+    
+     
+     <TextView
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         
+         android:text="@string/default_qty"
+         android:padding="5dp"
+         android:gravity="center"
+         android:textColor="@color/white" />
+    
+     
+     <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="11dp"
+        android:background="@color/white"/>
+     
+    <TextView
+         android:layout_width="110dp"
+         android:layout_height="wrap_content"
+         
+         android:text="@string/select"
+         android:padding="5dp"
+        android:gravity="center"
+         android:textColor="@color/white" />
+    
+     <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"/>
+     
+ </LinearLayout>
+    
+
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        
+        android:background="@color/white"
+        android:layout_below="@+id/list_header"/>
+
+<ListView 
+    android:layout_marginTop="1dp"
+    android:id="@+id/labour_list"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_below="@+id/list_header"
+    android:scrollbars="vertical"
+    android:divider="@color/white"
+    android:dividerHeight="1dp"
+                android:scrollbarSize="2dp"
+                android:fastScrollEnabled="true"
+                android:fadeScrollbars="false"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@color/white"
+    >
+    
+    
+</ListView>
+
+<TextView 
+    
+    android:id="@+id/empty_view"
+    android:text="No records found."
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+    android:visibility="gone"
+    android:textColor="#FFF"
+    />    
+
+
+<Button
+    android:id="@+id/labour_parts_cancel_btn"
+    android:layout_width="150dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="30dp"
+    android:layout_toRightOf="@+id/labour_parts_done_btn"
+    android:background="@drawable/button_submit"
+    android:text="@string/cancel"
+    android:textColor="@color/white"
+   android:layout_marginBottom="26dp"
+   android:layout_alignParentBottom="true"
+    android:textSize="12sp" />
+
+<Button
+    android:id="@+id/labour_parts_done_btn"
+    android:layout_width="150dp"
+    android:layout_height="30dp"
+    android:layout_marginBottom="26dp"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/white"
+    android:layout_marginTop="60dp"
+    android:background="@drawable/button_submit"
+    android:text="Done"
+   android:layout_alignParentBottom="true"
+    android:textSize="12sp" />
+
+</RelativeLayout>

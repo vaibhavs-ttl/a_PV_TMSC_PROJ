@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.ttl.customersocialapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PaidServiceFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/blue_medium_transparent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top|center"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <Spinner
+                    android:id="@+id/spinregno"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/anim_sipnner"
+                    android:paddingLeft="5dp" />
+
+                <Spinner
+                    android:id="@+id/spinkmtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/anim_sipnner"
+                    android:paddingLeft="5dp" />
+
+                 <com.ttl.customersocialapp.FloatLabelLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/anim_sipnner"
+                    android:paddingLeft="10dp"
+                    app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                    <com.ttl.customersocialapp.InstantAutoComplete
+                        android:id="@+id/spinstate"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_layout"
+                        android:hint="Select State"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/hintcolor" />
+                </com.ttl.customersocialapp.FloatLabelLayout>
+
+                <com.ttl.customersocialapp.FloatLabelLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/anim_sipnner"
+                    android:paddingLeft="10dp"
+                    app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                    <com.ttl.customersocialapp.InstantAutoComplete
+                        android:id="@+id/spincity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_layout"
+                        android:hint="Select City"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/hintcolor" />
+                </com.ttl.customersocialapp.FloatLabelLayout>
+
+                <Button
+                    android:id="@+id/btnfetch"
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_submit"
+                    android:drawableLeft="@drawable/rupee"
+                    android:paddingLeft="15dp"
+                    android:text="FETCH"
+                    android:textColor="#F5F5F5"
+                    android:textSize="15sp" />
+
+                <com.ttl.customersocialapp.FloatLabelLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/anim_edittext_layout"
+                    android:paddingLeft="10dp"
+                    app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                    <EditText
+                        android:id="@+id/txtlabourcost"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_layout"
+                        android:editable="false"
+                        android:hint="Cost of Labour"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/hintcolor" />
+                </com.ttl.customersocialapp.FloatLabelLayout>
+
+                <com.ttl.customersocialapp.FloatLabelLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/anim_edittext_layout"
+                    android:paddingLeft="10dp"
+                    app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                    <EditText
+                        android:id="@+id/txtsparecost"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_layout"
+                        android:editable="false"
+                        android:hint="Cost of Spares"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/textcolor"
+                        android:textColorHint="@color/hintcolor" />
+                </com.ttl.customersocialapp.FloatLabelLayout>
+
+                <com.ttl.customersocialapp.FloatLabelLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/anim_edittext_layout"
+                    android:paddingLeft="10dp"
+                    app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                    <EditText
+                        android:id="@+id/txtconsumcost"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/edittext_layout"
+                        android:editable="false"
+                        android:hint="Cost of Consumables"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/hintcolor" />
+                </com.ttl.customersocialapp.FloatLabelLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="TOTAL ESTIMATED COST"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/yellow" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/alfa"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="1dp"
+                        android:background="@drawable/rupee" />
+
+                    <TextView
+                        android:id="@+id/txttotalcost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+          	 android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:text="Note: The values displayed above are only the estimate for standard jobs. The final value may vary based on the actual jobs done at the dealership and rates prevailing on the day of service." />
+       
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

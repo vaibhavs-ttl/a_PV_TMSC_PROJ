@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/homeline" />
+
+    <ImageView
+        android:id="@+id/notifyimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/ntfytype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/notifyimage"
+        android:text="Service Alert"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/notifyimage"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ntfytype"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/ntftitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ntfytype"
+        android:layout_alignBottom="@+id/notifytype"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/view1"
+        android:text="MH 12 MQ 8957"
+        android:textColor="@color/white"
+        android:textSize="4pt" />
+
+    <TextView
+        android:id="@+id/notifydesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ntfytype"
+        android:layout_below="@+id/view1"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:text="You have just completed service please give your feedback."
+        android:textColor="@color/white"
+        android:textSize="5pt" />
+
+</RelativeLayout>

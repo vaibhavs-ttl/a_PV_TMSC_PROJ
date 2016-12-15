@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/relmain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/reldelearname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imgdelearcount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/delearlistcountimg" />
+
+                <TextView
+                    android:id="@+id/txtdelercount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/txtdelearname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_toRightOf="@+id/imgdelearcount"
+                    android:layout_marginRight="10dp"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rdbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:button="@drawable/radiobutton" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/reladdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/reldelearname" >
+
+                <TextView
+                    android:id="@+id/txtaddreslable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="36dp"
+                    android:text="ADDRESS : "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtdelearaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txtaddreslable"
+                    android:text="" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/reladdress" >
+
+                <TextView
+                    android:id="@+id/txtnumberlable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="36dp"
+                    android:text="PHONE/MOBILE : "
+                    android:textStyle="bold" />
+
+           <!--      <TextView
+                    android:id="@+id/txtphonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txtnumberlable"
+                    android:text="TextView" /> -->
+                 <ListView
+                    android:id="@+id/delearphonenumberlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_toRightOf="@+id/txtnumberlable"
+                    android:dividerHeight="1dp" >
+                </ListView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/relphonenumber" >
+
+                <TextView
+                    android:id="@+id/txtemaillable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="36dp"
+                    android:text="EMAIL : "
+                    android:padding="5dp"
+                    android:textStyle="bold" />
+
+                
+                <ListView
+                    android:id="@+id/delearemaillist"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/txtemaillable"
+                    android:dividerHeight="1dp" />
+                
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relemail"
+                android:layout_marginTop="4dp" >
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="#D9D9D9" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_below="@+id/relmain1" >
+
+            <ImageView
+                android:id="@+id/imgshowmap"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/showonmap" />
+
+            <TextView
+                android:id="@+id/txtshowonmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/imgshowmap"
+                android:text="Show On Map"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgdirection"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/txtshowonmap"
+                android:src="@drawable/directions" />
+
+            <TextView
+                android:id="@+id/txtdirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/imgdirection"
+                android:text="Directions"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgbookservices"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/txtdirection"
+                android:src="@drawable/bookservice" />
+
+            <TextView
+                android:id="@+id/txtbookservices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_toRightOf="@+id/imgbookservices"
+                android:text="Book Services"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

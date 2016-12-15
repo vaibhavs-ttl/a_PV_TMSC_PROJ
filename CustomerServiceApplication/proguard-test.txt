@@ -1,0 +1,565 @@
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.billing.IInAppBillingService
+-keep public class * extends android.view.View {
+    public <init>(android.content.Context);
+    public <init>(android.content.Context, android.util.AttributeSet);
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * extends android.content.Context {
+    public void *(android.view.View);
+    public void *(android.view.MenuItem);
+}
+-libraryjars libs
+
+# The official support library.
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+
+# Library JARs.
+-dontwarn com.google.android.gms.internal.zzhu
+-keep class com.google.android.gms.internal.** { *; }
+-dontwarn com.itextpdf.awt.PdfGraphics2D
+-dontwarn com.itextpdf.awt.PdfGraphics2D$FakeComponent
+
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zza
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zzb
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zzc
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zzd
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zze
+-dontwarn com.google.ads.mediation.AdUrlAdapter
+-dontwarn com.google.ads.mediation.NetworkExtras
+-dontwarn com.google.ads.mediation.admob.AdMobAdapter
+-dontwarn com.google.android.gms.internal.zzci
+-dontwarn com.google.android.gms.internal.zzcn
+-dontwarn com.google.android.gms.internal.zzcr
+-dontwarn com.google.android.gms.internal.zzct
+-dontwarn com.google.android.gms.internal.zzcv
+-dontwarn com.google.android.gms.internal.zzes
+-dontwarn com.google.android.gms.internal.zzeu
+
+
+-dontwarn com.google.android.gms.internal.zzex
+-dontwarn com.google.android.gms.internal.zzfz
+-dontwarn com.google.android.gms.internal.zzga
+-dontwarn com.google.android.gms.internal.zzgt
+-dontwarn com.google.android.gms.internal.zzhe
+-dontwarn com.google.android.gms.internal.zzhf
+-dontwarn com.google.android.gms.internal.zzhg
+-dontwarn com.google.android.gms.internal.zzhl
+-dontwarn com.google.android.gms.internal.zzja$zzc
+-dontwarn com.google.android.gms.internal.zzjj
+-dontwarn com.google.android.gms.internal.zzjk
+-dontwarn com.google.android.gms.internal.zzju
+
+
+-dontwarn com.google.android.gms.internal.zzju$zza
+-dontwarn com.google.android.gms.internal.zzjv
+-dontwarn com.google.android.gms.internal.zzko
+-dontwarn com.google.android.gms.internal.zzko$1$1
+-dontwarn com.google.android.gms.internal.zzko$zza$1
+-dontwarn com.google.android.gms.internal.zzko$zzb
+
+-dontwarn com.google.android.gms.internal.zzko$zzc$1
+-dontwarn com.google.android.gms.internal.zzko$zzd
+-dontwarn com.google.android.gms.internal.zzko$zze
+-dontwarn com.google.android.gms.internal.zzks
+-dontwarn com.google.android.gms.internal.zzkt
+-dontwarn com.google.android.gms.internal.zzkw
+-dontwarn com.google.android.gms.internal.zzkw$zzc
+-dontwarn com.google.android.gms.internal.zznd$1
+-dontwarn com.google.android.gms.internal.zznd$2
+-dontwarn com.google.android.gms.internal.zznd$zza
+-dontwarn com.google.android.gms.internal.zznd$zzb
+-dontwarn com.google.android.gms.internal.zznd$zzc
+-dontwarn com.google.android.gms.internal.zznd$zzd
+
+-dontwarn com.google.android.gms.internal.zznd$zze
+-dontwarn com.google.android.gms.internal.zznd$zzf
+-dontwarn com.google.android.gms.internal.zznd$zzg
+-dontwarn com.google.android.gms.internal.zznd$zzh
+-dontwarn com.google.android.gms.internal.zzne
+-dontwarn com.google.android.gms.internal.zzne$1
+-dontwarn com.google.android.gms.internal.zznf$zza
+-dontwarn com.google.android.gms.internal.zznf$zzb
+
+-dontwarn com.google.android.gms.internal.zznf$zzc
+-dontwarn com.google.android.gms.internal.zznf$zzd
+-dontwarn com.google.android.gms.internal.zznf$zze
+-dontwarn com.google.android.gms.internal.zznf$zzf
+-dontwarn com.google.android.gms.internal.zzng
+-dontwarn com.google.android.gms.internal.zzon
+-dontwarn com.google.android.gms.internal.zzoo
+-dontwarn com.google.android.gms.internal.zzop
+-dontwarn com.google.android.gms.internal.zzor
+-dontwarn com.google.android.gms.internal.zzos
+-dontwarn com.google.android.gms.internal.zzot
+
+-dontwarn com.google.android.gms.internal.zzov
+-dontwarn com.google.android.gms.internal.zzpz
+-dontwarn com.google.android.gms.internal.zzqb
+-dontwarn com.google.android.gms.internal.zzqn
+-dontwarn com.google.android.gms.internal.zzqn$zza
+-dontwarn com.google.android.gms.internal.zzqn$zzd
+-dontwarn com.google.android.gms.internal.zzqp
+-dontwarn com.google.android.gms.internal.zzrn
+-dontwarn com.google.android.gms.internal.zzrn$1
+
+-dontwarn com.google.android.gms.internal.zzrn$2
+-dontwarn com.google.android.gms.internal.zzrn$3
+-dontwarn com.google.android.gms.internal.zzrn$4
+-dontwarn com.google.android.gms.internal.zzrn$5
+-dontwarn com.google.android.gms.internal.zzrn$6
+-dontwarn com.google.android.gms.internal.zzrq
+
+-dontwarn com.google.android.gms.internal.zzrr
+-dontwarn com.google.ads.AdRequest
+-dontwarn com.google.ads.AdSize
+
+
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zza
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zzb
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zzc
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zzd
+-dontwarn com.google.ads.mediation.AbstractAdViewAdapter$zze
+-dontwarn com.google.ads.mediation.AdUrlAdapter
+
+-dontwarn com.google.ads.mediation.MediationServerParameters
+-dontwarn com.google.ads.mediation.customevent.CustomEventAdapter
+-dontwarn com.google.ads.mediation.customevent.CustomEventAdapter$zza
+-dontwarn com.google.ads.mediation.customevent.CustomEventAdapter$zzb
+-dontwarn com.google.android.gms.analytics.internal.zza
+-dontwarn com.google.android.gms.internal.zzam
+-dontwarn com.google.android.gms.internal.zzam$zzb
+-dontwarn com.google.android.gms.internal.zzax
+-dontwarn com.google.android.gms.internal.zzay
+-dontwarn com.google.android.gms.internal.zzaz
+
+-dontwarn com.google.android.gms.internal.zzaz$7
+-dontwarn com.google.android.gms.internal.zzbb
+-dontwarn com.google.android.gms.internal.zzbc
+-dontwarn com.google.android.gms.internal.zzbc$1
+-dontwarn com.google.android.gms.internal.zzbd
+-dontwarn com.google.android.gms.internal.zzbg
+-dontwarn com.google.android.gms.internal.zzbh
+-dontwarn com.google.android.gms.internal.zzbi
+-dontwarn com.google.android.gms.internal.zzbk
+-dontwarn com.google.android.gms.internal.zzbm
+-dontwarn com.google.android.gms.internal.zzbm$zza
+-dontwarn com.google.android.gms.internal.zzbp
+-dontwarn com.google.android.gms.internal.zzbs
+-dontwarn com.google.android.gms.internal.zzbt
+-dontwarn com.google.android.gms.internal.zzbu
+-dontwarn com.google.android.gms.internal.zzbx
+-dontwarn com.google.android.gms.internal.zzby
+-dontwarn com.google.android.gms.internal.zzbz
+-dontwarn com.google.android.gms.internal.zzca
+-dontwarn com.google.android.gms.internal.zzcb
+-dontwarn com.google.android.gms.internal.zzcg
+-dontwarn com.google.android.gms.internal.zzch
+-dontwarn com.google.android.gms.internal.zzcl
+-dontwarn com.google.android.gms.internal.zzda
+-dontwarn com.google.android.gms.internal.zzdb
+-dontwarn com.google.android.gms.internal.zzdc
+
+-dontwarn com.google.android.gms.internal.zzdd
+-dontwarn com.google.android.gms.internal.zzde
+-dontwarn com.google.android.gms.internal.zzdf
+-dontwarn com.google.android.gms.internal.zzdi
+-dontwarn com.google.android.gms.internal.zzdj$10
+-dontwarn com.google.android.gms.internal.zzdj$3
+-dontwarn com.google.android.gms.internal.zzdj$4
+-dontwarn com.google.android.gms.internal.zzdj$5
+-dontwarn com.google.android.gms.internal.zzdj$6
+-dontwarn com.google.android.gms.internal.zzdj$8
+-dontwarn com.google.android.gms.internal.zzdj$9
+-dontwarn com.google.android.gms.internal.zzdl
+-dontwarn com.google.android.gms.internal.zzdl$1
+-dontwarn com.google.android.gms.internal.zzdl$1$1
+-dontwarn com.google.android.gms.internal.zzdn
+-dontwarn com.google.android.gms.internal.zzdp
+-dontwarn com.google.android.gms.internal.zzdq
+-dontwarn com.google.android.gms.internal.zzdr
+
+-dontwarn com.google.android.gms.internal.zzdr$zza
+-dontwarn com.google.android.gms.internal.zzds
+-dontwarn com.google.android.gms.internal.zzdt
+-dontwarn com.google.android.gms.internal.zzdt$1
+-dontwarn com.google.android.gms.internal.zzdu
+-dontwarn com.google.android.gms.internal.zzdv
+-dontwarn com.google.android.gms.internal.zzdw
+-dontwarn com.google.android.gms.internal.zzdy
+-dontwarn com.google.android.gms.internal.zzdz
+-dontwarn com.google.android.gms.internal.zzdz$1$1$1
+-dontwarn com.google.android.gms.internal.zzdz$1$2
+-dontwarn com.google.android.gms.internal.zzdz$1$3
+-dontwarn com.google.android.gms.internal.zzdz$1$4
+-dontwarn com.google.android.gms.internal.zzdz$2
+-dontwarn com.google.android.gms.internal.zzdz$3
+-dontwarn com.google.android.gms.internal.zzdz$zzd$1
+
+-dontwarn com.google.android.gms.internal.zzdz$zzd$2
+-dontwarn com.google.android.gms.internal.zzdz$zze
+-dontwarn com.google.android.gms.internal.zzdz$zze$1
+-dontwarn com.google.android.gms.internal.zzdz$zze$2
+-dontwarn com.google.android.gms.internal.zzed
+-dontwarn com.google.android.gms.internal.zzee
+-dontwarn com.google.android.gms.internal.zzeh
+-dontwarn com.google.android.gms.internal.zzej
+-dontwarn com.google.android.gms.internal.zzek
+-dontwarn com.google.android.gms.internal.zzek$1
+-dontwarn com.google.android.gms.internal.zzel
+-dontwarn com.google.android.gms.internal.zzen
+-dontwarn com.google.android.gms.internal.zzen$zza
+-dontwarn com.google.android.gms.internal.zzen$zza$zza
+-dontwarn com.google.android.gms.internal.zzet
+-dontwarn com.google.android.gms.internal.zzev
+
+-dontwarn com.google.android.gms.internal.zzew
+-dontwarn com.google.android.gms.internal.zzey
+-dontwarn com.google.android.gms.internal.zzez
+-dontwarn com.google.android.gms.internal.zzez$1
+-dontwarn com.google.android.gms.internal.zzez$10
+-dontwarn com.google.android.gms.internal.zzez$11
+-dontwarn com.google.android.gms.internal.zzez$2
+-dontwarn com.google.android.gms.internal.zzez$3
+-dontwarn com.google.android.gms.internal.zzez$4
+-dontwarn com.google.android.gms.internal.zzez$5
+-dontwarn com.google.android.gms.internal.zzez$6
+-dontwarn com.google.android.gms.internal.zzez$7
+-dontwarn com.google.android.gms.internal.zzez$8
+-dontwarn com.google.android.gms.internal.zzez$9
+-dontwarn com.google.android.gms.internal.zzfa
+-dontwarn com.google.android.gms.internal.zzfb
+
+-dontwarn com.google.android.gms.internal.zzfb$1
+-dontwarn com.google.android.gms.internal.zzfc
+-dontwarn com.google.android.gms.internal.zzfd
+-dontwarn com.google.android.gms.internal.zzfe
+-dontwarn com.google.android.gms.internal.zzff
+-dontwarn com.google.android.gms.internal.zzfg
+-dontwarn com.google.android.gms.internal.zzfh
+-dontwarn com.google.android.gms.internal.zzfj
+-dontwarn com.google.android.gms.internal.zzfq
+-dontwarn com.google.android.gms.internal.zzfq$1
+-dontwarn com.google.android.gms.internal.zzfq$1$1
+-dontwarn com.google.android.gms.internal.zzfx
+-dontwarn com.google.android.gms.internal.zzfy
+-dontwarn com.google.android.gms.internal.zzgb
+-dontwarn com.google.android.gms.internal.zzgc
+-dontwarn com.google.android.gms.internal.zzgc$1
+-dontwarn com.google.android.gms.internal.zzgd
+-dontwarn com.google.android.gms.internal.zzgd$zza
+-dontwarn com.google.android.gms.internal.zzge
+
+-dontwarn com.google.android.gms.internal.zzgf
+-dontwarn com.google.android.gms.internal.zzgg
+-dontwarn com.google.android.gms.internal.zzgi
+-dontwarn com.google.android.gms.internal.zzgj
+-dontwarn com.google.android.gms.internal.zzgk
+-dontwarn com.google.android.gms.internal.zzgl
+-dontwarn com.google.android.gms.internal.zzgm
+-dontwarn com.google.android.gms.internal.zzgm$1
+-dontwarn com.google.android.gms.internal.zzgm$2
+-dontwarn com.google.android.gms.internal.zzgm$3
+-dontwarn com.google.android.gms.internal.zzgm$4
+-dontwarn com.google.android.gms.internal.zzgm$5
+-dontwarn com.google.android.gms.internal.zzgm$zza
+-dontwarn com.google.android.gms.internal.zzgn
+-dontwarn com.itextpdf.awt.PdfGraphics2D$HyperLinkKey
+-dontwarn com.google.android.gms.internal.zzgo
+-dontwarn com.google.android.gms.internal.zzgp
+-dontwarn com.google.android.gms.internal.zzgq
+-dontwarn com.google.android.gms.internal.zzgt$1$1
+-dontwarn com.google.android.gms.internal.zzgt$2
+
+-dontwarn com.google.android.gms.internal.zzgt$6
+-dontwarn com.google.android.gms.internal.zzgu
+-dontwarn com.google.android.gms.internal.zzgv$1
+-dontwarn com.google.android.gms.internal.zzgv$2
+-dontwarn com.google.android.gms.internal.zzgw
+-dontwarn com.google.android.gms.internal.zzgy$zza
+-dontwarn com.google.android.gms.internal.zzhg$1
+-dontwarn com.google.android.gms.internal.zzhi
+-dontwarn com.google.android.gms.internal.zzhi$1
+-dontwarn com.google.android.gms.internal.zzhi$2
+-dontwarn com.google.android.gms.internal.zzhk
+-dontwarn com.google.android.gms.internal.zzhn
+-dontwarn com.google.android.gms.internal.zzhs
+-dontwarn com.google.android.gms.internal.zzhs$zza
+-dontwarn com.google.android.gms.internal.zzht
+-dontwarn com.google.android.gms.internal.zzhv
+-dontwarn com.google.android.gms.internal.zzhx
+-dontwarn com.google.android.gms.internal.zzhy
+-dontwarn com.google.android.gms.internal.zzia
+-dontwarn com.google.android.gms.internal.zzic
+-dontwarn com.google.android.gms.internal.zzic$3
+-dontwarn com.google.android.gms.internal.zzid
+
+-dontwarn com.google.android.gms.internal.zzif
+-dontwarn com.google.android.gms.internal.zzif$1
+-dontwarn com.google.android.gms.internal.zzih$2
+-dontwarn com.google.android.gms.internal.zzii
+-dontwarn com.google.android.gms.internal.zzii$1
+-dontwarn com.google.android.gms.internal.zzij
+-dontwarn com.google.android.gms.internal.zzik
+-dontwarn com.google.android.gms.internal.zzim
+-dontwarn com.google.android.gms.internal.zzip$2
+-dontwarn com.google.android.gms.internal.zzir
+-dontwarn com.google.android.gms.internal.zziv
+-dontwarn com.google.android.gms.internal.zziy
+-dontwarn com.google.android.gms.internal.zziz
+-dontwarn com.google.android.gms.internal.zzja
+-dontwarn com.google.android.gms.internal.zzja$1
+-dontwarn com.google.android.gms.internal.zzjb
+-dontwarn com.google.android.gms.internal.zzjc
+-dontwarn com.google.android.gms.internal.zzjd
+-dontwarn com.google.android.gms.internal.zzjf
+-dontwarn com.google.android.gms.internal.zzjg
+-dontwarn com.google.android.gms.internal.zzji
+-dontwarn com.google.android.gms.internal.zzjp
+-dontwarn com.google.android.gms.internal.zzjp$zza
+
+-dontwarn com.google.android.gms.internal.zzjp$zza$zza
+-dontwarn com.google.android.gms.internal.zzjq
+-dontwarn com.google.android.gms.internal.zzjq$zza
+-dontwarn com.google.android.gms.internal.zzjq$zza$zza
+-dontwarn com.google.android.gms.internal.zzjr
+-dontwarn com.google.android.gms.internal.zzjt
+-dontwarn com.google.android.gms.internal.zzju$1
+-dontwarn com.google.android.gms.internal.zzju$zzb
+-dontwarn com.google.android.gms.internal.zzjv$zza
+-dontwarn com.google.android.gms.internal.zzko$1
+-dontwarn com.google.android.gms.internal.zzko$2
+-dontwarn com.google.android.gms.internal.zzko$zza
+-dontwarn com.google.android.gms.internal.zzko$zzc
+-dontwarn com.google.android.gms.internal.zzkq
+-dontwarn com.google.android.gms.internal.zzku
+-dontwarn com.google.android.gms.internal.zzkv
+-dontwarn com.google.android.gms.internal.zzkw$1
+-dontwarn com.google.android.gms.internal.zzkw$zzb
+-dontwarn com.google.android.gms.internal.zzkw$zzb$zza
+-dontwarn com.google.android.gms.internal.zzkw$zzb$zzb
+-dontwarn com.google.android.gms.internal.zzkx
+-dontwarn com.google.android.gms.internal.zzkx$1
+
+-dontwarn com.google.android.gms.internal.zznd
+-dontwarn com.google.android.gms.internal.zznh
+-dontwarn com.google.android.gms.internal.zznl
+-dontwarn com.google.android.gms.internal.zznm$zza
+-dontwarn com.google.android.gms.internal.zznn$zza
+-dontwarn com.google.android.gms.internal.zzno$zza
+-dontwarn com.google.android.gms.internal.zznq$zza
+-dontwarn com.google.android.gms.internal.zznr$zza
+-dontwarn com.google.android.gms.internal.zzns$zza
+-dontwarn com.google.android.gms.internal.zznt
+-dontwarn com.google.android.gms.internal.zznt$zza
+-dontwarn com.google.android.gms.internal.zznt$zza$zza
+-dontwarn com.google.android.gms.internal.zznu
+-dontwarn com.google.android.gms.internal.zznu$zza
+-dontwarn com.google.android.gms.internal.zznu$zza$zza
+-dontwarn com.google.android.gms.internal.zznv
+-dontwarn com.google.android.gms.internal.zznv$zza
+-dontwarn com.google.android.gms.internal.zznv$zza$zza
+-dontwarn com.google.android.gms.internal.zznw
+-dontwarn com.google.android.gms.internal.zznw$zza
+-dontwarn com.google.android.gms.internal.zznw$zza$zza
+-dontwarn com.google.android.gms.internal.zznx
+
+-dontwarn com.google.android.gms.internal.zznx$zza
+-dontwarn com.google.android.gms.internal.zznx$zza$zza
+-dontwarn com.google.android.gms.internal.zzny
+-dontwarn com.google.android.gms.internal.zzny$zza
+-dontwarn com.google.android.gms.internal.zzny$zza$zza
+-dontwarn com.google.android.gms.internal.zznz
+-dontwarn com.google.android.gms.internal.zznz$zza
+-dontwarn com.google.android.gms.internal.zznz$zza$zza
+-dontwarn com.google.android.gms.internal.zzoa
+-dontwarn com.google.android.gms.internal.zzoa$zza
+-dontwarn com.google.android.gms.internal.zzoa$zza$zza
+-dontwarn com.google.android.gms.internal.zzob
+-dontwarn com.google.android.gms.internal.zzob$zza
+-dontwarn com.google.android.gms.internal.zzob$zza$zza
+-dontwarn com.google.android.gms.internal.zzoc
+-dontwarn com.google.android.gms.internal.zzoc$zza
+-dontwarn com.google.android.gms.internal.zzoc$zza$zza
+-dontwarn com.google.android.gms.internal.zzod
+-dontwarn com.google.android.gms.internal.zzod$zza
+-dontwarn com.google.android.gms.internal.zzod$zza$zza
+-dontwarn com.google.android.gms.internal.zzoe
+
+-dontwarn com.google.android.gms.internal.zzoe$zza
+-dontwarn com.google.android.gms.internal.zzoe$zza$zza
+-dontwarn com.google.android.gms.internal.zzof
+-dontwarn com.google.android.gms.internal.zzof$zza
+-dontwarn com.google.android.gms.internal.zzof$zza$zza
+-dontwarn com.google.android.gms.internal.zzog
+-dontwarn com.google.android.gms.internal.zzog$zza
+-dontwarn com.google.android.gms.internal.zzog$zza$zza
+-dontwarn com.google.android.gms.internal.zzoh
+-dontwarn com.google.android.gms.internal.zzoh$zza
+-dontwarn com.google.android.gms.internal.zzoh$zza$zza
+-dontwarn com.google.android.gms.internal.zzoi
+-dontwarn com.google.android.gms.internal.zzoi$zza
+-dontwarn com.google.android.gms.internal.zzoi$zza$zza
+-dontwarn com.google.android.gms.internal.zzok
+-dontwarn com.google.android.gms.internal.zzok$zza
+-dontwarn com.google.android.gms.internal.zzok$zza$zza
+-dontwarn com.google.android.gms.internal.zzon$1
+-dontwarn com.google.android.gms.internal.zzon$2
+-dontwarn com.google.android.gms.internal.zzon$3
+-dontwarn com.google.android.gms.internal.zzon$4
+-dontwarn com.google.android.gms.internal.zzon$5
+-dontwarn com.google.android.gms.internal.zzon$6
+-dontwarn com.google.android.gms.internal.zzon$zza
+-dontwarn com.google.android.gms.internal.zzoo$1
+-dontwarn com.google.android.gms.internal.zzoo$2
+
+-dontwarn com.google.android.gms.internal.zzoo$3
+-dontwarn com.google.android.gms.internal.zzoo$zza
+-dontwarn com.google.android.gms.internal.zzop$1
+-dontwarn com.google.android.gms.internal.zzop$2
+-dontwarn com.google.android.gms.internal.zzop$3
+-dontwarn com.google.android.gms.internal.zzop$4
+-dontwarn com.google.android.gms.internal.zzop$4$1
+-dontwarn com.google.android.gms.internal.zzop$zza
+-dontwarn com.google.android.gms.internal.zzor$1
+-dontwarn com.google.android.gms.internal.zzor$2
+-dontwarn com.google.android.gms.internal.zzor$3
+-dontwarn com.google.android.gms.internal.zzor$4
+-dontwarn com.google.android.gms.internal.zzor$5
+-dontwarn com.google.android.gms.internal.zzor$zza
+-dontwarn com.google.android.gms.internal.zzos$1
+-dontwarn com.google.android.gms.internal.zzos$2
+-dontwarn com.google.android.gms.internal.zzos$3
+-dontwarn com.google.android.gms.internal.zzos$4
+-dontwarn com.google.android.gms.internal.zzos$zzb
+-dontwarn com.google.android.gms.internal.zzot$1
+-dontwarn com.google.android.gms.internal.zzot$2
+-dontwarn com.google.android.gms.internal.zzot$3
+-dontwarn com.google.android.gms.internal.zzot$4
+-dontwarn com.google.android.gms.internal.zzot$5
+
+-dontwarn com.google.android.gms.internal.zzot$6
+-dontwarn com.google.android.gms.internal.zzot$zza
+-dontwarn com.google.android.gms.internal.zzot$zzb
+-dontwarn com.google.android.gms.internal.zzow
+-dontwarn com.google.android.gms.internal.zzow$zza
+-dontwarn com.google.android.gms.internal.zzow$zza$zza
+-dontwarn com.google.android.gms.internal.zzpz$zza
+-dontwarn com.google.android.gms.internal.zzpz$zzb
+-dontwarn com.google.android.gms.internal.zzpz$zzc
+-dontwarn com.google.android.gms.internal.zzqj
+-dontwarn com.google.android.gms.internal.zzqk
+-dontwarn com.google.android.gms.internal.zzql
+-dontwarn com.google.android.gms.internal.zzql$zza
+-dontwarn com.google.android.gms.internal.zzql$zza$zza
+-dontwarn com.google.android.gms.internal.zzqn$zzb
+-dontwarn com.google.android.gms.internal.zzqn$zzb$1
+-dontwarn com.google.android.gms.internal.zzqn$zzc
+
+-dontwarn com.google.android.gms.internal.zzqn$zzc$1
+-dontwarn com.google.android.gms.internal.zzrb
+-dontwarn com.google.android.gms.internal.zzrb$zzd
+-dontwarn com.google.android.gms.internal.zzrd
+-dontwarn com.google.android.gms.internal.zzrh
+-dontwarn com.google.android.gms.internal.zzrh$zza
+-dontwarn com.google.android.gms.internal.zzrh$zza$zza
+-dontwarn com.google.android.gms.internal.zzrj
+-dontwarn com.google.android.gms.internal.zzrj$zza
+-dontwarn com.google.android.gms.internal.zzrj$zza$zza
+-dontwarn com.google.android.gms.internal.zzrk
+-dontwarn com.google.android.gms.internal.zzrk$zza
+-dontwarn com.google.android.gms.internal.zzrk$zza$zza
+-dontwarn com.google.android.gms.internal.zzrm
+-dontwarn com.google.android.gms.internal.zzrm$zza
+-dontwarn com.google.android.gms.internal.zzrm$zza$zza
+
+-dontwarn com.google.android.gms.internal.zzro
+-dontwarn com.google.android.gms.internal.zzro$zza
+-dontwarn com.google.android.gms.internal.zzro$zzb
+-dontwarn com.google.android.gms.internal.zzrp
+-dontwarn com.google.android.gms.internal.zzrs
+-dontwarn com.google.android.gms.internal.zzrs$zza
+-dontwarn com.google.android.gms.measurement.internal.zzs
+-dontwarn com.google.android.gms.internal.zzgz$zza
+-dontwarn com.google.android.gms.ads.internal.zzp
+
+
+-dontwarn com.itextpdf.awt.PdfGraphics2D$HyperLinkKey
+-dontwarn com.itextpdf.awt.PdfPrinterGraphics2D
+-dontwarn com.itextpdf.awt.geom.PolylineShape
+-dontwarn com.itextpdf.awt.geom.PolylineShapeIterator
+-dontwarn com.itextpdf.awt.AsianFontMapper
+-dontwarn com.itextpdf.awt.DefaultFontMapper
+
+-dontwarn com.itextpdf.awt.FontMapper
+-dontwarn com.itextpdf.testutils.ITextTest
+-dontwarn com.itextpdf.text.Image
+-dontwarn com.itextpdf.text.pdf.Barcode
+
+-dontwarn com.itextpdf.text.pdf.Barcode128
+-dontwarn com.itextpdf.text.pdf.Barcode39
+-dontwarn com.itextpdf.text.pdf.BarcodeCodabar
+-dontwarn com.itextpdf.text.pdf.BarcodeDatamatrix
+-dontwarn com.itextpdf.text.pdf.BarcodeEAN
+-dontwarn com.itextpdf.text.pdf.BarcodeEANSUPP
+-dontwarn com.itextpdf.text.pdf.BarcodeInter25
+-dontwarn com.itextpdf.text.pdf.BarcodePDF417
+
+-dontwarn com.itextpdf.text.pdf.BarcodePostnet
+-dontwarn com.itextpdf.text.pdf.BarcodeQRCode
+-dontwarn com.itextpdf.text.pdf.PdfContentByte
+-dontwarn com.itextpdf.text.pdf.PdfEncryptor
+-dontwarn com.itextpdf.text.pdf.PdfPublicKeySecurityHandler
+-dontwarn com.itextpdf.text.pdf.PdfReader
+-dontwarn com.itextpdf.text.pdf.crypto.AESCipher
+-dontwarn com.itextpdf.text.pdf.crypto.AESCipherCBCnoPad
+-dontwarn com.itextpdf.text.pdf.parser.PdfImageObject
+-dontwarn com.itextpdf.text.pdf.security.BouncyCastleDigest
+
+
+-dontwarn com.itextpdf.text.pdf.security.CertificateInfo
+-dontwarn com.itextpdf.text.pdf.security.CertificateInfo$X500Name
+-dontwarn com.itextpdf.text.pdf.security.CertificateUtil
+-dontwarn com.itextpdf.text.pdf.security.CertificateVerification
+-dontwarn com.itextpdf.text.pdf.security.ExternalDecryptionProcess
+-dontwarn com.itextpdf.text.pdf.security.LtvVerification
+
+-dontwarn com.itextpdf.text.pdf.security.LtvVerifier
+-dontwarn com.itextpdf.text.pdf.security.MakeXmlSignature
+-dontwarn com.itextpdf.text.pdf.security.OCSPVerifier
+-dontwarn com.itextpdf.text.pdf.security.OcspClientBouncyCastle
+
+-dontwarn com.itextpdf.text.pdf.security.PdfPKCS7
+-dontwarn com.itextpdf.text.pdf.security.TSAClientBouncyCastle
+-dontwarn com.itextpdf.text.pdf.security.TSAInfoBouncyCastle
+-dontwarn com.squareup.picasso.OkHttpDownloader
+
+-keep class com.itextpdf.** { *; }
+-keep interface com.itextpdf.** { *; }
+
+-libraryjars /libs/picasso-2.5.2.jar
+-libraryjars /libs/itextpdf-5.5.4.jar
+
+# Library projects.
+-keep class com.actionbarsherlock.** { *; }
+-keep interface com.actionbarsherlock.** { *; }
+-keep class com.viewpagerindicator.** { *; }
+-keep interface com.viewpagerindicator.** { *; }
+
+
+
+

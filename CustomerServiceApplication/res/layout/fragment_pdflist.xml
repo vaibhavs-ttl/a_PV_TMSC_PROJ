@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/frgpdf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/reltitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffbb00" >
+
+            <ImageView
+                android:id="@+id/GPSImg"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:padding="3dp"
+                android:src="@drawable/gps_trip_meter" />
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="GPS Trip History"
+                android:textColor="#323232"
+                android:textSize="10pt" />
+
+            <ImageView
+                android:id="@+id/imggpsview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tripmeter" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/pdflist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reltitle"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue_light_transparent"
+            android:divider="@color/yellow"
+            android:dividerHeight="1dp" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

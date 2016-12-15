@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ScrollView 
+        
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"              
+        >
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+               
+       <Spinner
+                    android:id="@+id/spinregno"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/anim_sipnner"
+                    android:paddingLeft="5dp" />
+       
+       
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           >
+       <Spinner
+                    android:id="@+id/spinnnerState"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/anim_sipnner"
+                    android:paddingLeft="5dp" />
+       <Spinner
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="400dp"
+                    
+                    android:background="@drawable/anim_sipnner"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="20dp" />
+        
+        
+        </RelativeLayout>
+        
+       <RelativeLayout 
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:layout_marginTop="8dp"
+          >
+           
+           <Button
+				            android:id="@+id/btnAddLabour"
+				            
+				            android:layout_width="300dp"
+				            android:layout_height="60dp"
+				            android:textColor="#F5F5F5"
+				            android:text="Add Labour"
+				            android:textSize="15sp"
+				            android:layout_marginTop="20dp"
+				            android:layout_marginLeft="100dp"
+				            android:background="@drawable/button_submit"
+				            android:layout_marginBottom="10dp" />
+           
+           
+           
+           <Button
+				            android:id="@+id/btnAddSpares"
+				            android:layout_marginTop="20dp"
+				            android:layout_width="300dp"
+				            android:layout_height="60dp"
+				            android:textColor="#F5F5F5"
+				            android:text="Add Spares"
+				            android:textSize="15sp"
+				            android:layout_marginLeft="400dp"
+				            android:layout_marginRight="10dp"
+				            android:background="@drawable/button_submit"
+				            android:layout_marginBottom="10dp" />
+           
+           
+       </RelativeLayout>
+       
+       
+       
+       
+       
+       <RelativeLayout 
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           >
+           
+           
+           
+       </RelativeLayout>
+       
+       
+       
+        
+    </LinearLayout>
+    
+    
+    </ScrollView>
+    
+</RelativeLayout>

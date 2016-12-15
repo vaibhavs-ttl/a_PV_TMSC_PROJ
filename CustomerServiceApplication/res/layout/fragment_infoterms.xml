@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/reltitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffbb00" >
+
+            <ImageView
+                android:id="@+id/GPSImg"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:padding="3dp"
+                android:src="@drawable/info_and_terms" />
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:layout_toRightOf="@+id/GPSImg"
+                android:gravity="center_horizontal"
+                android:text="Info and Terms of Use"
+                android:textColor="#323232"
+                android:textSize="9pt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reltext"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_below="@+id/reltitle"
+            android:background="#ffffff"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/txtdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="TextView" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

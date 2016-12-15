@@ -1,0 +1,287 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.ttl.customersocialapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/Servicebbok"
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/complaint_registration" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/yellow"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Complaint Registration"
+                    android:textColor="@color/black"
+                    android:textSize="10pt" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_medium_transparent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <Spinner
+                android:id="@+id/spinner_regNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_sipnner"
+                android:padding="10dip" />
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/edit_varient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_layout"
+                    android:editable="false"
+                    android:hint="Vehicle Variant"
+                    android:focusable="false"
+                   
+                    android:textColor="@color/white"
+                    android:paddingRight="10dp"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <Spinner
+                android:id="@+id/spinner_c_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_sipnner"
+                android:entries="@array/complainarea"
+                android:padding="10dip" />
+
+            <Spinner
+                android:id="@+id/spinner_c_subarea"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_sipnner"
+                android:entries="@array/complainsubarea"
+                android:padding="10dip" />
+
+            <Spinner
+                android:id="@+id/spinner_c_problem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_sipnner"
+                android:entries="@array/problemarea"
+                android:padding="10dip" />
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/edit_complaintback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_layout"
+                    android:hint="Complaint Background"
+                    android:paddingRight="10dp"
+                    android:maxLength="1000"
+                    android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/edit_resolution"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_layout"
+                    android:hint="Resolution Required"
+                  android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="500"
+                    android:paddingRight="10dp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/edit_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_layout"
+                    android:hint="Mobile Number"
+                   
+                    android:maxLength="10"
+                    android:paddingRight="10dp"
+                    android:inputType="number"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_layout"
+                    android:hint="Email ID"
+                    android:inputType="textEmailAddress"
+                    
+                    android:paddingRight="10dp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_sipnner"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <com.ttl.customersocialapp.InstantAutoComplete
+                    android:id="@+id/spinner_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_layout"
+                    android:hint="Dealer City"
+                    android:inputType="text"
+                   
+                    android:paddingRight="10dp"
+                    android:focusableInTouchMode="true"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <Spinner
+                android:id="@+id/spinner_dealer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_sipnner"
+                android:entries="@array/dealer"
+                android:padding="10dip" />
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/edit_dealerNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:editable="false"
+                    android:hint="Dealer Contact Number"
+                 
+                    android:focusable="true"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="5dp"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dip"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_border_rectangle"
+                android:text="RESET"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/white_border_rectangle"
+                android:text="SUBMIT"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

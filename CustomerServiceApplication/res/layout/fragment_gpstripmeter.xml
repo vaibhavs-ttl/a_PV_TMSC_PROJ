@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/reltitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffbb00" >
+
+            <ImageView
+                android:id="@+id/GPSImg"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:padding="3dp"
+                android:src="@drawable/gps_trip_meter" />
+
+            <ImageView
+                android:id="@+id/imgpdfhistory"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:src="@drawable/history" />
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="GPS Trip Meter"
+                android:textColor="#323232"
+                android:textSize="10pt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reldisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reltitle"
+            android:layout_marginTop="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/reltxt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:background="#323232" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignRight="@+id/view" >
+
+                    <TextView
+                        android:id="@+id/txtdistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="DISTANCE"
+                        android:textColor="#ffffff"
+                        android:textSize="9pt" />
+
+                    <TextView
+                        android:id="@+id/txtdistn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/txtdistance"
+                        android:layout_below="@+id/txtdistance"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:maxLength="5"
+                        android:text="0.000"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/txtdistn"
+                        android:layout_toRightOf="@+id/txtdistn"
+                        android:text="KM"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignRight="@+id/view"
+                    android:layout_centerHorizontal="true"
+                    android:background="#ffffff" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@+id/view" >
+
+                    <TextView
+                        android:id="@+id/txtduration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="DURATION"
+                        android:textColor="#ffffff"
+                        android:textSize="9pt" />
+
+                    <TextView
+                        android:id="@+id/txtcounter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtduration"
+                        android:layout_centerHorizontal="true"
+                        android:text="00:00:00"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/relmap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/reltxt"
+                android:background="#ffffff" >
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="270dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:apiKey="AIzaSyC6VY-8PtO1m8clveDV9iapCWdHDA3Z12M" >
+                </com.google.android.gms.maps.MapView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relmap"
+                android:layout_marginTop="10dp" >
+
+                <Button
+                    android:id="@+id/btnstarttrip"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gps_btn_bg"
+                    android:selectAllOnFocus="true"
+                    android:text="START TRIP"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnstoptrip"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gps_btn_bg"
+                    android:text="STOP TRIP"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnclear"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gps_btn_bg"
+                    android:text="RESET TRIP"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+
+    android:background="#EEF2F5" >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/yellow">
+	        
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Vehicle Registration"
+	        android:textSize="20sp"
+	        android:paddingLeft="20dp"
+	        android:paddingTop="15dp"
+	        android:textColor="#000000"/>
+	    
+	    <ImageView
+	        android:id="@+id/imgclose"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/close"
+	        android:scaleType="fitXY" />
+	
+	</RelativeLayout>
+	
+    	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="top|center">
+	    
+    	       <TextView 
+			        android:id="@+id/txtregno"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:textSize="13sp"
+			        android:textColor="@color/black"
+			        android:layout_marginTop="5dp"/>
+			    
+			     <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Your Vehicle is Verified."
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:textSize="15sp"
+			        android:textColor="@color/black"
+			        android:layout_marginTop="15dp"/>
+			    
+			    <TextView 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="Please,Enter the full 10 digit Mobile Number"
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:textSize="14sp"
+			        android:textColor="@color/black"
+			        android:layout_marginTop="5dp"/>
+			    
+			     <TextView 
+			         android:id="@+id/txtmoilenumber"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="(********69) to proceed"
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:textSize="15sp"
+			        android:textColor="@color/black"
+			        android:layout_marginTop="5dp"/>
+			      
+		   	    <EditText
+		            android:id="@+id/edtmobileno"
+				    android:layout_width="wrap_content"
+				    android:layout_height="40dp"
+				    android:ems="10"
+				    android:gravity="center"
+				    android:singleLine="true"
+			    	android:paddingLeft="10dp"
+				    android:paddingRight="10dp"
+				    android:background="@drawable/anim_edittext_layout"
+				    android:hint="Enter Mobile Number"
+				    android:inputType="phone"
+				    android:maxLength="10"
+				    android:layout_marginTop="10dp" />
+		   	    
+		     	 <Button 
+			          android:id="@+id/visit_site"
+					  android:layout_marginTop="10dp"
+					  android:layout_width="150dp"
+					  android:layout_height="wrap_content"
+					  android:textColor="#F5F5F5"
+					  android:text="SUBMIT"
+					  android:textSize="15sp"		
+					  android:background="@drawable/button_submit"
+					  android:layout_marginBottom="10dp"/>
+     
+     
+			      <TextView 
+			          android:id="@+id/forgotmob"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:text="@string/forget"
+			        android:layout_gravity="center"
+			        android:gravity="center"
+			        android:textSize="15sp"
+			        android:textColor="@color/black"
+			        android:layout_marginTop="10dp"
+			        android:layout_marginBottom="10dp"/>
+	   
+	</LinearLayout>
+
+</LinearLayout>

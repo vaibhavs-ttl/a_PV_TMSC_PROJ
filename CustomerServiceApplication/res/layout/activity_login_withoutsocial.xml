@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.ttl.customersocialapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".LoginActivity" >
+
+    <ImageView
+        android:id="@+id/imgtatalogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/tata_z" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgtatalogo"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imgtata_service_logo"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/tata_service_logo" />
+
+        <com.ttl.customersocialapp.FloatLabelLayout
+            android:id="@+id/txtuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/anim_edittext_layout"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+            <EditText
+                android:id="@+id/txtuser_id"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_layout"
+                android:digits="0123456789AQZWSXEDCRFVTGBYHNUJMIKOLP_abcdefghijklmnopqrstuvwxyz"
+                android:ems="10"
+                android:hint="User ID"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor"
+                android:textCursorDrawable="@drawable/cursur"
+                android:textSize="18sp" />
+        </com.ttl.customersocialapp.FloatLabelLayout>
+
+        <com.ttl.customersocialapp.FloatLabelLayout
+            android:id="@+id/txtpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/anim_edittext_layout"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/txtuser"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_layout"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="12dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hintcolor"
+                android:textCursorDrawable="@drawable/cursur"
+                android:textSize="18sp" />
+        </com.ttl.customersocialapp.FloatLabelLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="24dp"
+                android:text="@string/forgotpass"
+                android:textColor="@color/white" />
+
+            
+                 <TextView
+            android:id="@+id/forgot_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+           	android:layout_alignParentLeft="true"
+           	android:layout_marginLeft="24dp"
+          	
+            android:text="@string/forgotuser_id"
+            android:textColor="@color/white" />
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </RelativeLayout>
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_submit"
+            android:text="Sign In"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_border_rectangle"
+            android:text="Sign Up"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

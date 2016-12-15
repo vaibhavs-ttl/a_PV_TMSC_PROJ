@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TMSC</string>
+    <string name="blank"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="maintenancetips">Maintenance Tips</string>
+    <string name="forget"><u>FORGOTTEN YOUR MOBILE NO?</u></string>
+    <string name="terms"><u>I agree with Terms and Services</u></string>
+    <string name="warning_dialog">Since no network connection is available, So you may not be able to login for next 30 minutes.</string>
+    <string name="passwordpolicy"><u>Password Policy</u></string>
+    <string name="passwordpolicydialog"><u><font color="black">Password Policy</font></u></string>
+    <string name="forgotpass"><u>Forgot Password?</u></string>
+    <string name="changepass"><u>Change Password</u></string>
+    <string name="invalid_email_warning"><u>Invalid Email ID</u></string>
+    <string name="empty_email_warning"><u>Please enter your registered email ID</u></string>
+    <string name="forgotuser_id"><u>Forgot User ID?</u></string>
+    <string name="updatelater"><u>UPDATE LATER</u></string>
+    <string name="cost_est_data_empty"><u>Data for selected city is not present.</u></string>
+    <string name="no_network_msg">No network connection avaialble</string>
+    <string name="invalid_user_id"><u>Please enter valid User ID</u></string>
+    <string name="password_policy_combination">Password must contain atleast one special character (@,#,^,&amp;,+,=)</string>
+    <string name="password_policy_uppercase">Password must be combination of Uppercase.</string>
+    <string name="password_policy_lowercase">Password must be combination of lowercase.</string>
+    <string name="password_policy_numbers">Password must be combination of a number.</string>
+    <string name="password_policy_length">Password must be between 8 to 15 characters.</string>
+    <string name="password_policy_spaces">No spaces are allowed.</string>
+    <string name="password_policy_lastFivePasswors">Password should be different than last 5 passwords.</string>
+    <string name="select_labour">Select Labour</string>
+    <string name="select_spares">Select Spares</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="email">Email</string>
+    <string name="default_qty">Default Qty</string>
+    <string name="type">Type</string>
+    <string name="search">Search</string>
+    <string name="desc">Description</string>
+    <string name="qty">Qty</string>
+    <string name="value">Value</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="product_brochure_name_btn">Download Brochure</string>
+    <string name="visit_site">Visit Website</string>
+    <string name="select">Select</string>
+    <string name="select_vehicle">Select Vehicle</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="uom">Unit of Measure</string>
+    <string name="approx_labour_amt">Labour Amount (Approx) =800INR*</string>
+    <string name="approx_spares_amt">Spares Amount (Approx) =1600INR*</string>
+    <string name="progress_dialog_msg">Please wait..</string>
+    <string name="thumbPath">/thumb</string>
+    <string name="quantity">Quantity</string>
+  <string name="edit_quantity">Edit Quantity</string>
+  
+  <string name="brochur_download_info">Download will start automatically. Once download is completed, Download Brochure button will read as View Brochure. Click on View Brochure button to open the product brochure</string>
+  
+  
+  <string name="calculationNote">Note: The amount shown are indicative and may change during actual billing based on current rates.</string>
+   <string name="labourSpareNote">Please select Labour and Spare items to generate estimate.</string>
+  
+  
+  
+  <string name="update">Update</string>
+  
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Service Booking</item>
+        <item>Service Booking History</item>
+        <item>Maintenance Cost</item>
+        <item>Complaint Registration</item>
+        <item>Complaint Registered</item>
+        <item>Cost Estimate Calculator</item>
+        <item>Feedback</item>
+        <item>Service History</item>
+        <item>Vehicle Details</item>
+        <item>My Documents</item>
+        <item>Notifications</item>
+        <item>Dealer Locator</item>
+        <item>GPS Trip Meter</item>
+        <item>Vehicle Finder</item>
+        <item>Traffic and Weather</item>
+        <item>Customer Details</item>
+        <item>Maintenance Tips</item>
+        <item>Reminder</item>
+        <item>Info and Updates</item>
+        <item>Product Information</item>
+        <item>Emergency Contact</item>
+        <item>Terms of Use</item>
+        <!-- <item>Know your car</item> -->
+        <item>Log Out</item>
+       
+    </string-array>
+
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/home</item>
+        <item>@drawable/service_booking</item>
+        <item>@drawable/service_history</item>
+        <item>@drawable/maintenance_cost</item>
+        <item>@drawable/complaint_registration</item>
+        <item>@drawable/complaintdetails</item>
+        <item>@drawable/cost_calculator</item>
+        <item>@drawable/feedback_m</item>
+        <item>@drawable/service_history</item>
+        <item>@drawable/vehicle_details</item>
+        <item>@drawable/my_documents</item>
+        <item>@drawable/notifications</item>
+        <item>@drawable/dealer_locator</item>
+        <item>@drawable/gps_trip_meter</item>
+        <item>@drawable/vehicle_finder</item>
+        <item>@drawable/traffic_and_weather</item>
+        <item>@drawable/customer_details</item>
+        <item>@drawable/maintenance_tips</item>
+        <item>@drawable/calender</item>
+        <item>@drawable/news_and_updates</item>
+        <item>@drawable/emergencycontact</item>
+         <item>@drawable/product_info</item>
+        <item>@drawable/info_and_terms</item>
+        <item>@drawable/logout</item>
+       
+    </array>
+
+
+    <string-array name="city">
+        <item>Dealer City</item>
+    </string-array>
+    <string-array name="dealer">
+        <item>Dealer</item>
+    </string-array>
+    <string-array name="servicetype">
+        <item>Service Type</item>
+        <item>First Free Service</item>
+        <item>Second Free Service</item>
+        <item>Third Free Service</item>
+        <item>Fourth Free Service</item>
+        <item>Fifth Free Service</item>
+        <item>Paid Service</item>
+        <item>Running Repairs</item>
+         <item>Campaign</item>
+    </string-array>
+    <string-array name="complaindesc">
+        <item>Complaint Description</item>
+    </string-array>
+    <string-array name="complainarea">
+        <item>Complaint Area</item>
+    </string-array>
+    <string-array name="complainsubarea">
+        <item>Complaint Sub Area</item>
+    </string-array>
+    <string-array name="problemarea">
+        <item>Problem Area</item>
+    </string-array>
+    <string-array name="regno">
+        <item>Registration Number</item>
+        <item>MH14EY2690</item>
+        <!--
+        <item>MH04CG2996</item>
+        <item>MH04CG2997</item>
+        <item >MH14BR5258</item>
+        -->
+    </string-array>
+    <string-array name="chassis">
+        <item>Chassis Number</item>
+        <item>MAT623251FLA05109</item>
+        <!--
+        <item>426021AUZ702705</item>
+        <item>426021AUZ702706</item>
+        <item>MAT6122219YP16175</item>
+        -->
+    </string-array>
+    <string-array name="chassis_vehdet">
+        <item>Chassis Number</item>
+        <item>MAT623251FLA05109</item>
+        <!-- <item>357151BVZ804302</item> -->
+
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="reg_chassis">
+        <item>Registration Number - Chassis Number</item>
+        <item>MH14EY2690 - MAT623251FLA05109</item>
+    </string-array>
+    <!-- QA -->
+
+
+    <!--
+    <string name="URL">http://tmcrmappsqa.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    <string name="URL1">http://tmcrmappsqa.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    -->
+    <!--
+    QA SSL 
+    <string name="URL">https://tmcrmportalqa.inservices.tatamotors.com/home/MobileApps/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    <string name="URL1">https://tmcrmportalqa.inservices.tatamotors.com/home/MobileApps/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    -->
+
+
+    <!--
+     <string name="URL">https://tmcrmportalqa.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    <string name="URL1">https://tmcrmportalqa.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    -->
+
+
+    <!-- NEW CORDYS PROD SSL -->
+
+
+    <!--
+      <string name="URL">https://tmcrmportal.inservices.tatamotors.com/home/MobileApps/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    <string name="URL1">https://tmcrmportal.inservices.tatamotors.com/home/MobileApps/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com  </string>
+    -->
+
+
+    <!-- NEW CORDYS PROD SSL -->
+
+    <string name="URL">https://tmcrmportalqa.inservices.tatamotors.com/home/MobileApps/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    <string name="URL1">https://tmcrmportalqa.inservices.tatamotors.com/home/MobileApps/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+
+    <!-- PROD -->
+    <!--
+    <string name="URL">https://tmcrmapps.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    <string name="URL1">https://tmcrmapps.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    -->
+    <!-- DEV -->
+    <!--
+    <string name="URL">https://tmcrmportalqa.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    <string name="URL1">https://tmcrmportalqa.inservices.tatamotors.com/cordys/com.eibus.web.soap.Gateway.wcp?organization=o=MobileApps,cn=cordys,cn=cbop,o=tatamotors.com</string>
+    -->
+
+    <string name="keypwd">asdfghjkl1234567890</string>
+    <string name="key">MDED994oUET6wtZRHro5/Mum0OVmpR+l</string>
+    <string name="iv">64CDB4ASso2eMKDy</string>
+
+    <!-- Weather Report -->
+    <string name="label_city">City</string>
+    <string name="label_date">Date</string>
+    <string name="label_temperature">Temperature</string>
+    <string name="label_wind">Wind</string>
+    <string name="label_wind_value">0.0km/h</string>
+    <string name="label_humidity">Humidity</string>
+    <string name="label_humidity_value">0%</string>
+    <string name="image_weather_description">Weather image</string>
+    <string name="fetching_data">Fetching weather data</string>
+    <string name="network_error">No network connection available.</string>
+    <string name="alert_search_title">Search</string>
+    <string name="alert_search_message">Write a town to display his weather</string>
+    <string name="alert_search_validate">OK</string>
+    <string name="alert_search_cancel">Cancel</string>
+    <string name="no_location">No Location Found</string>
+    <!-- Weather Report -->
+    <string name="title_activity_dealor_locator">DealorLocator</string>
+    <string name="title_activity_dealer_google_map">DealerGoogleMap</string>
+    <string name="title_activity_register_user">RegisterUserActivity</string>
+    <string name="title_activity_generic">Generic</string>
+    <string name="feedback">Feedback</string>
+    <string name="title_activity_post_services">PostServices</string>
+    <string name="que1">Please rate the ability of Dealership to schedule service visit as per your request</string>
+    <string name="que2">Please rate the time taken since you arrived till handed over the car to Service Advisor</string>
+    <string name="que3">Please rate the Courtesy / Friendliness extended by workshop during your visit</string>
+    <string name="que4">Please rate the Thoroughness of Explanations by Service Advisor</string>
+    <string name="que5">Please rate the ease of driving in/Driving Out at the Dealership</string>
+    <string name="que6">Please rate the comfort of waiting area at the Dealership</string>
+    <string name="que7">Please rate the Dealership in terms of Convenience of location</string>
+    <string name="que8">Please rate the Dealership in terms of fairness of Charges</string>
+    <string name="que9">Please rate the Timeliness of the pick-up process</string>
+    <string name="que10">Please rate the total time taken by Dealership to service your vehicle</string>
+    <string name="que11">Please rate the cleanliness of Vehicle on return (Interior and Exterior)</string>
+    <string name="que12">“In the scale of 1 to 10, please rate your overall service experience”</string>
+    <string name="que13">Please rate the Quality of Repair/maintenance performed on your vechicle</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="feedback_dialog">Please select Feedback Type</string>
+    <string name="title_activity_cost__estimationn">Cost Estimationn</string>
+    <string name="p1">Make sure vehicle is on a flat leveled surface</string>
+    <string name="p2">Start the engine and allow it to reach the normal operating temperature</string>
+    <string name="p3">Pull the dipstick out, wipe it clean and re-insert it fully</string>
+    <string name="p4">The level should be between the 2 dots( high and low)</string>
+    <string name="selectfeedbacktype">Select Feedback Type</string>
+    <string name="title_activity_main_list">MainList</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">http://javatechig.android.app</string>
+    <string name="twitter_consumer_key">vM5RNi5CCodJnL7e5BOA</string>
+    <string name="twitter_consumer_secret">FQNS0eBbM8J5DDjDglLCwOvAUUesYhN5uFxdxjKLgk</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <!-- End Configurations -->
+
+
+    <!-- Terms of use -->
+    <string name="text1">IMPORTANT: PLEASE READ THESE TERMS AND CONDITIONS BEFORE YOU REGISTER FOR AND USE "TATA MOTORS SERVICE CONNECT" MOBILE APPLICATION SERVICES (THE "SERVICE")</string>
+    <string name="text2">In these terms and conditions, "we", "our" and "us" mean TATA MOTORS LIMITED or its Authorized Dealers and "you" and "your" mean the individual who is using the Service. These terms and conditions apply to your use of the Service  TATA MOTORS SERVICE CONNECT mobile application), and any information contained therein. If you do not agree with any of the terms set out herein, you should not use the Service, and if you have already installed TATA MOTORS SERVICE CONNECT, mobile application software (the "Application"), you should uninstall the Application from your mobile device.</string>
+    <string name="title_activity_version_update">VersionUpdateActivity</string>
+
+    <!-- Info and update -->
+    <string name="txtCustomerCare">Customer Care</string>
+    <!-- product Broucher -->
+    <string name="txtProductName"></string>
+    <string name="title_activity_select_labour">SelectLabourActivity</string>
+    <string name="title_activity_select_spare">SelectSpareActivity</string>
+
+</resources>

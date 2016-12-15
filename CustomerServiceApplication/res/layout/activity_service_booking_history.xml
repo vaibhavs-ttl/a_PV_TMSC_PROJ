@@ -1,0 +1,45 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".ServiceBookingHistory" >
+	
+	<LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/service_history" />
+
+        <TextView
+            android:id="@+id/txtmaintensnce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="Service Booking History"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+		    <ExpandableListView 
+		        android:id="@+id/list"
+		        android:choiceMode="singleChoice"
+		        android:layout_marginTop="5dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:groupIndicator="@null"/>
+  
+</LinearLayout>
