@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/product_brochure_container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp">
+    
+    
+    
+    <LinearLayout
+      
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:scaleType="centerInside"
+            android:src="@drawable/product_info" />
+
+        <TextView
+            android:id="@+id/txtinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="Product Information"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    
+    <ListView 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/productListView"
+        android:layout_marginTop="50dp"
+        android:divider="@color/yellow"
+        android:dividerHeight="2dp"
+        ></ListView>
+    
+    
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainrel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95000000"
+    android:fitsSystemWindows="true"
+    tools:context=".TransActivity" >
+
+    <ImageView
+        android:id="@+id/imgSwapHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/swaphand" />
+
+    <TextView
+        android:id="@+id/txttextt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgSwapHand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="ROBOTO"
+        android:gravity="center"
+        android:text="Swipe to get more Information"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imgstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txttext"
+        android:layout_toRightOf="@+id/imgSwapHand"
+        android:src="@drawable/btnclickhand" />
+
+    <TextView
+        android:id="@+id/txttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgstart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="ROBOTO"
+        android:gravity="left"
+        android:text="Click to Start"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

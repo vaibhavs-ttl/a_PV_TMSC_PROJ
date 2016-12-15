@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    android:background="@color/alfa"  >
+    
+<LinearLayout 
+
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:weightSum="1"
+	     >			    
+			 <TextView 
+				android:id="@+id/txttitle_date"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_weight="0.5"
+				android:textSize="15sp"
+				android:gravity="left"
+				android:textColor="@color/hintcolor"
+				android:text="Date"/>
+			
+			<TextView
+				android:id="@+id/txtdec_date"
+				android:layout_width="0dp"
+				android:layout_alignParentRight="true"
+				android:layout_toRightOf="@+id/txttitle_date"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.5"
+				android:textColor="@color/white"
+				android:textSize="15sp" 
+				android:gravity="right"/>
+			
+						           
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/verysoftblue" />
+	<LinearLayout 
+
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:weightSum="1"
+	     >				
+		 	 <TextView 
+				android:id="@+id/txttitle_model"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:textSize="15sp"
+				android:gravity="left"
+				android:layout_weight="0.5"
+				android:textColor="@color/hintcolor"
+				android:text="Model"/>
+			
+			<TextView
+				android:id="@+id/txtdec_model"
+				android:layout_width="0dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/txtdec_model"
+				android:textColor="@color/white"
+				android:layout_weight="0.5"
+				android:textSize="15sp" 
+				android:gravity="right"/>
+					           
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/verysoftblue" />
+	<LinearLayout 
+
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:weightSum="1"
+	     >				
+  		 <TextView 
+				android:id="@+id/txttitle_prim_area"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_weight="0.5"
+				android:textSize="15sp"
+				android:gravity="left"
+				android:textColor="@color/hintcolor"
+				android:text="Primary Complaint Area"/>
+			
+			<TextView
+				android:id="@+id/txtdec_prim_area"
+				android:layout_width="0dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@+id/txtdec_prim_area"
+				android:textColor="@color/white"
+				android:layout_weight="0.5"
+				android:textSize="15sp" 
+				android:gravity="right"/>
+						           
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/verysoftblue" />
+    
+	<LinearLayout 
+
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:weightSum="1"
+	     >					    
+			 <TextView 
+				android:id="@+id/txttitle_subarea"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:textSize="15sp"
+				android:layout_weight="0.5"
+				android:gravity="left"
+				android:textColor="@color/hintcolor"
+				android:text="Sub Area"/>
+			
+			<TextView
+				android:id="@+id/txtdec_subarea"
+				android:layout_width="0dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_weight="0.5"
+				android:layout_height="wrap_content"
+				android:textColor="@color/white"
+				android:layout_toRightOf="@+id/txtdec_subarea"
+				android:textSize="15sp" 
+				android:gravity="right"/>
+			           
+  </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/verysoftblue" />
+    <LinearLayout 
+
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:weightSum="1"
+	     >
+			 <TextView 
+				android:id="@+id/txttitle_probarea"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:textSize="15sp"
+				android:layout_weight="0.5"
+				android:gravity="left"
+				android:textColor="@color/hintcolor"
+				android:text="Problem Area"/>
+			
+			<TextView
+				android:id="@+id/txtdec_prob_area"
+				android:layout_width="0dp"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_weight="0.5"
+				android:layout_height="wrap_content"
+				android:textColor="@color/white"
+				android:layout_toRightOf="@+id/txttitle_probarea"
+				android:textSize="15sp" 
+				android:gravity="right"/>
+			</LinearLayout>
+    
+	    
+			<!--  <TextView 
+				android:id="@+id/txttitle_probarea"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:textSize="15sp"
+				android:gravity="left"
+				android:padding="5dp"
+				android:layout_marginTop="10dp"
+				android:textColor="@color/hintcolor"
+				android:text="Problem Area"/>
+			
+			<TextView
+				android:id="@+id/txtdec_prob_area"
+				android:layout_width="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_height="wrap_content"
+				android:textColor="@color/white"
+				android:textSize="12sp" 
+				android:padding="5dp"
+				android:gravity="left"
+				android:layout_marginBottom="15dp"/> -->
+	
+</LinearLayout>

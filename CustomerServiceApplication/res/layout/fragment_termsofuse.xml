@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/reltitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffbb00" >
+
+            <ImageView
+                android:id="@+id/GPSImg"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:padding="3dp"
+                android:src="@drawable/info_and_terms" />
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Terms of Use"
+                android:textColor="#323232"
+                android:textSize="10pt" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrol1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/reltitle"
+            android:layout_marginTop="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/reltext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/scrol1" >
+
+                <TextView
+                    android:id="@+id/txtdata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:text="INTRODUCTIONS"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtdata"
+                    android:layout_below="@+id/txtdata"
+                    android:text="@string/text1"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView60"
+                    android:layout_marginTop="10dp"
+                    android:text="SERVICES : (TO BE DEFINED)"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="10dp"
+                    android:text="1) Registration in App (Login creation and Vehicle addition to a login) 
+                    \n2) Service Booking with booked service history viewing 
+                    \n3) Complaints creation with booked complaint history viewing 
+                    \n4) Maintenance cost viewing 
+                    \n5) Service Cost estimate calculator 
+                    \n6) Feedback sharing (Generic and Post service) 
+                    \n7) Service History viewing (Summary and Detailed) 
+                    \n8) Vehicle details viewing 
+                    \n9) Provision to tag pictures of important documents under various categories 
+                    \n10) View live notifications from Tata Motors Limited 
+                    \n11) View and locate Service dealer locations on google map view 
+                    \n12) Use GPS trip meter functionality to record your trips 
+                    \n13) Use the GPS vehicle location saving and locating the same 
+                    \n14) View Traffic and weather in the location of your mobile device 
+                    \n15) View and set various vehicle specific reminders 
+                    \n16) View various maintenance tips shared by Tata Motors Limited 
+                    \n17) Share your location in case of emergency with our call center team 
+                    \n18) View Tata Motors Limited important office address and contact numbers 
+                    \n19) View important service product circulars from Tata Motors Limited"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="10dp"
+                    android:text="1. The Application:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView6"
+                    android:layout_below="@+id/textView6"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text=" As consideration for your continuing compliance with an agreement to be bound by the Terms and Conditions, we hereby grant and you hereby accept a limited, non-exclusive, non-transferable, non-assignable license to use the Application (which shall include future updates made available to you from time to time, provided you understand that such updates may be subject to additional terms in respect of which you will be notified at the time such update is made available) to access your TATA MOTORS SERVICE CONNECT account from your mobile device, subject to the Terms and Conditions."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView7"
+                    android:layout_marginTop="10dp"
+                    android:text="You understand, acknowledge and agree that:"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView7"
+                    android:layout_below="@+id/textView8"
+                    android:layout_marginTop="10dp"
+                    android:text="1) You must be a TATA MOTORS LIMITED customer with a legally purchased TATA MOTORS vehicle. 
+                    \n2) You may only use the Application on mobile devices and operating systems that are authorized/recognized by TATA MOTORS LIMITED as being eligible to receive the Service. 
+                    \n3) You will only use the Service and the Application solely and exclusively for your own personal, private, non-commercial use and on registered mobile devices belonging to you. 
+                    \n4) You will at all times comply with and be bound by the Terms and Conditions. 
+                    \n5) You will at all times comply with (and your use of the Service and the Application will at all times be in compliance with) all applicable laws, rules and regulations, including, without limitation, , and you will not allow any other party to use the Service or the Application for or in connection with any illegal purpose or activity. The Application is not intended for distribution or use by any person in any jurisdiction or country where such use and/or distribution would be contrary to local laws, rules and/or regulations. It is your responsibility to comply with all local laws, rules and/or regulations. 
+                    \n6) You may only use the Application for the purpose of accessing TATA MOTORS LIMITED, its Authorized Dealers, its Affiliates or its Licensors services and for no other purpose whatsoever. 
+                    \n7) The Application is licensed only to you in accordance with the terms hereof and for the limited purposes set out herein. 
+                    \n8) You will compensate us in respect of any damages suffered by us and any losses or liabilities incurred by us as a result of any and all claims, demands, actions, proceedings, losses, liabilities, damages, costs, fees and expenses (including, without limitation, reasonable attorney fees and costs of any investigation) (collectively, the Claims) from any third party in relation to any matters arising out of or in any connected with: (a) your use of the Service, (b) your breach of or failure to comply with any of the Terms and Conditions, (c) your failure to comply with any applicable laws, rules or regulations, and (d) any negligence, bad faith, fraud or willful misconduct by or on behalf of you.
+                    \n9) Use of the Service (including the Application) is at your own risk and you are solely responsible for the use of any data, information or services obtained through the use of the Service. 
+                    \n10) The Service is provided as a convenience to you. The information accessible through the Service is more limited than the information available with the TATA MOTORS LIMITED or its AUTHORIZED DEALERS in electronic or hard form, and does not constitute an official record for the information to which it pertains. 
+                    \n11) You will comply at all times with all technical and security requirements which we establish regarding the Service.
+                    \n12) In the event that you fail to comply with the Terms and Conditions or you are no longer the owner of a TATA MOTORS vehicle, all rights granted to you in relation to the Application and the Service shall immediately come to an end and you will immediately uninstall the Application and destroy all copies of the Application. TATA MOTORS LIMITED, its affiliates, its licensors or its Authorized Dealers shall not be responsible in any way for the use of the Application by you after you cease to be an owner of the TATA MOTORS vehicle."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView9"
+                    android:layout_marginTop="15dp"
+                    android:text="You will not: "
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView9"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="10dp"
+                    android:text="1. Alter, modify, adapt or translate the whole or any part of the Application, or any other computer software made accessible to you or otherwise used by you to access and use the Service, or perform maintenance on the Application, nor will you duplicate, compile, disseminate, reverse engineer, disassemble, decompile, disable any features, or otherwise derive the source code for the Application, or any component of the Application, in whole or in part.\n 2.	Merge the Application or any component thereof into any other programs or create derivative works based on any component of the Application. \n 3.	Use the Application in whole or in part or any confidential information relating thereto to create software that is functionally equivalent to the Application or any part thereof. \n 4.	License, sublicense, sell, disseminate, broadcast, transmit, or otherwise distribute the Application or the Service in any form or by any means, or otherwise transfer, assign, manipulate, or grant any rights of use or any other rights in respect of the Application or the Service, or any part thereof, or the information contained therein, to any other party. \n 5.	Copy the Application or the information accessible through the Service onto any public or publicly accessible network, or make any additional copies of or reproduce in any way the whole or any part of the Application or the Service whatsoever.\n 6.	Remove or tamper with any proprietary notices or labels, including copyright notices or data source attributions, attached to or contained within the Application or the Service.\n 7.	Use the Application or the Service in any way that may lead to the encouragement, procurement or carrying out of any unlawful or criminal activity or which may cause any harm or injury to any person. \n 8.	Cause damage to any of the websites, servers, systems or equipment used in the provision of the Service by TATA MOTORS LIMITED, its Authorized Dealers or any other third party, and you may not access or attempt to access any user data or to penetrate any of the security measures relating to the Service; and will in all cases indemnify and hold harmless TATA MOTORS LIMITED, its affiliates and its Authorized Dealers from any and all Claims in respect thereof."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView11"
+                    android:layout_marginTop="17dp"
+                    android:text="2. Access"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView11"
+                    android:layout_below="@+id/textView14"
+                    android:layout_marginTop="10dp"
+                    android:text="You understand and agree that you are solely responsible for all orders, instructions and information entered through or electronically transmitted to us through the Service using your CHASSIS or Registration number, sign-on password, and/or mobile number, and you accept that all such orders, instructions and data transmissions are undertaken at your own risk. Neither TATA MOTORS LIMITED, nor any of its affiliates or licensors, nor the Authorized Dealers of TATA MOTORS LIMITED is liable for any error made by you in entering any details or providing any orders or instructions when you use the Service. You agree that TATA MOTORS LIMITED and its Authorized Dealers shall be entitled to rely upon orders and instructions received when entered using your CHASSIS or Registration number, sign-on password, and/or mobile number. You understand that once your CHASSIS or Registration Number, sign-on password, and/or mobile number have been entered in a given session, no additional passwords are required for availing the Services, and you will take all necessary precautions to prevent unauthorized access to your TATA MOTORS CONNECT account(s). TATA MOTORS LIMITED or its Authorized Dealers may rely on all instructions and any other communications given or entered by you or anyone else using your TATA MOTORS SERVICE CONNECT account, and you will be bound by any agreement entered into an act undertaken by TATA MOTORS LIMITED, its Licensors, its Affiliates or its Authorized Dealers in reliance on such orders, instructions and communications. Without limiting the generality of the foregoing, you will be responsible for all instructions received by TATA MOTORS LIMITED, its Licensors, its Affiliates or its Authorized Dealers between the time you first pass the secured log-in procedure until the time you log-out of the Application. Please note that this includes any input errors sent by anyone else. Please do not leave your mobile device unattended while you remain logged into the Application and delete the password (which remains saved as a functionality) after you have logged out"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_below="@+id/textView15"
+                    android:layout_marginTop="10dp"
+                    android:text="You must always keep confidential, and will take all necessary precautions to ensure the confidentiality and security of all of your access credentials, including your CHASSIS or Registration number, passwords, mobile number, access codes, personal identification numbers, other security code numbers, and the answers to any online security questions (personal verification questions) you may have chosen that allow you to sign-on to the Service / App (collectively, Access Credentials), and will take all necessary precautions to prevent unauthorized access to the Service. You will NOT divulge your Access Credentials to anyone, - including family members, friends, employees, bookkeepers or anyone else. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView16"
+                    android:layout_below="@+id/textView16"
+                    android:layout_marginTop="10dp"
+                    android:text="You will NOT: (a) write your Access Credentials down."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView17"
+                    android:layout_below="@+id/textView17"
+                    android:layout_marginTop="10dp"
+                    android:text="(b) keep a poorly disguised record of them."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView18"
+                    android:layout_below="@+id/textView18"
+                    android:layout_marginTop="10dp"
+                    android:text="(c) keep your Access Credentials together with your vehicles Registration Certificate or details of the CHASSIS, registration number and/or mobile number. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView19"
+                    android:layout_below="@+id/textView19"
+                    android:layout_marginTop="10dp"
+                    android:text="(d) save your Access Credentials in your mobile device."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView20"
+                    android:layout_below="@+id/textView20"
+                    android:layout_marginTop="10dp"
+                    android:text="(e) Respond to text messages, pop-ups, emails or other Internet requests that ask you to reveal personal information about yourself or your vehicle or your TATA MOTORS SERVICE CONNECT account. WE WILL NEVER SEND YOU UNSOLICITED TEXT MESSAGES OR EMAILS ASKING FOR YOUR ACCESS CREDENTIALS. We will never ask you to validate or restore your account or TATA MOTORS SERVICE CONNECT mobile application access through unsolicited text messages or emails. TML and its Affiliates shall not be made liable if in case your credentials are misused by any person, as the safe – keeping of credentials is solely your responsibility. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView21"
+                    android:layout_below="@+id/textView21"
+                    android:layout_marginTop="10dp"
+                    android:text="In the event that you suspect or immediately upon becoming aware that someone else knows or may have unauthorized access to your Access Credentials, or in the event of any other attempted or actual unauthorized access to the Service, or the loss, theft, misuse or compromise of any of your Access Credentials, you will immediately change your credentials or notify TATA MOTORS LIMITED on 1800 209 7979 or any of its Authorized dealers. In any event, TATA MOTORS LIMITED, its Affiliates, its Licensors and Authorized Dealers shall not be responsible for the use of your Application or your Access Credentials, including but not limited to unauthorized access and use of the Service on account of loss, theft, misuse, sale etc. of your mobile device. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView22"
+                    android:layout_below="@+id/textView22"
+                    android:layout_marginTop="10dp"
+                    android:text="You must review your instructions, communications, appointment details and information shared by you on a regular basis and report any errors in a timely manner. You will notify TATA MOTORS LIMITED or its Authorized Dealers immediately upon receipt of any confirmations of acts or appointments that were not placed by you or someone whom you have authorized to do or book in your account(s), and in the event that you do not receive confirmations for the acts or appointments that you did place."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView23"
+                    android:layout_below="@+id/textView23"
+                    android:layout_marginTop="10dp"
+                    android:text="If you fail to take any of the actions described above, you will be liable for any unauthorized transactions on your TATA MOTORS SERVICE CONNECT account confirmed by use of your CHASSIS or Registration Number, sign-on password and/or mobile number. You agree to assist us in any investigation into improper access to your accounts. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView24"
+                    android:layout_marginTop="21dp"
+                    android:text="3. Title:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView11"
+                    android:layout_below="@+id/textView12"
+                    android:layout_marginTop="10dp"
+                    android:text="You understand, acknowledge and agree that you acquire no right, title or interest whatsoever in or to the Application or the Service, or to TML as either of them exist now or in the future, and all ownership, rights, title, interest and intellectual property rights in the Application and the Service, including, but not limited to, all trade names, and any and all copyright, patents, trademarks, and service marks relating thereto, are and shall remain the property of TATA MOTORS LIMITED, its affiliates and/or its licensors, to the extent applicable, and nothing herein shall be construed as granting any rights therein to you."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView13"
+                    android:layout_marginTop="10dp"
+                    android:text="4.Disclaimer of Warranties and Availability:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView28"
+                    android:layout_below="@+id/textView29"
+                    android:layout_marginTop="10dp"
+                    android:text="You acknowledge that it is not possible for us to provide the Service free from defects. The Service may be delayed, unavailable, not delivered and/or inaccurate from time to time due to a variety of factors, including technical reasons, for planned or unplanned maintenance or downtime or for any other reason. The Service may be adversely affected by the performance of and any outages on mobile device networks, or when you are not in an area of mobile coverage, or other factors beyond the control of TATA MOTORS LIMITED or any of its affiliates or its licensors or its Authorized Dealers or any third party, and neither TATA MOTORS LIMITED, nor its affiliates nor its licensors nor its Authorized Dealers will be liable therefore. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView30"
+                    android:layout_below="@+id/textView30"
+                    android:layout_marginTop="10dp"
+                    android:text="You understand and agree that the Service and the Application are provided &apos;as is&apos; and &apos;as available&apos;, and all warranties, representations and guarantees, express or implied, are hereby disclaimed. Without limiting the generality of the foregoing, any and all warranties of merchantability, fitness for a particular purpose, suitability, reliability, accuracy, performance, compatibility or non-infringement, or that the Service or the Application will be free from defects, errors, viruses or harmful programs, or be of a satisfactory quality, are hereby expressly disclaimed. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView31"
+                    android:layout_below="@+id/textView31"
+                    android:layout_marginTop="10dp"
+                    android:text="Neither TATA MOTORS LIMITED, its affiliates, its licensors, its sub licensors, its Authorized Dealers nor any other third party provider makes any warranty, representation or guarantee as to the accessibility, reliability, communication links, accuracy, truth, timeliness, or completeness of any Information, including any traffic , service, weather information or other information or data furnished through the Service, or that any such Information disseminated may be solely relied upon for doing any act or other purposes. You acknowledge that it is your responsibility to verify any Information that you elect to use when taking any action."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView32"
+                    android:layout_marginTop="15dp"
+                    android:text="5. Information:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView24"
+                    android:layout_below="@+id/textView25"
+                    android:layout_marginTop="10dp"
+                    android:text="We provide information, including but not limited to (SERVICES TO BE ADDED), service tips, driving tips, maintenance tips, alerts, indicators, traffic and weather information, GPS trip meter, service due reminders, vehicle finder etc. (collectively, the Information) to you under license from various exchanges and information providers. This Information is indicative only. You may not redistribute or re-sell any Information which you obtain through TATA MOTORS CARE. All intellectual property rights owned by third parties in any Information provided by third parties shall at all times remain the property of such third parties. Your use of such Information is subject to the terms and conditions of each applicable third party or exchange data provider. We accept no liability for any Information provided by third parties and make no representations or warranties that such Information will be accurate or timely. The Service, the Application and all Information contained therein is and remains our property and/or the property of our third party licensors.  The information and record provided vide this platform is solely for your personal reference, records and convenience. The information shall not be circulated openly and the user shall maintain the information in a very restricted manner. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView26"
+                    android:layout_marginTop="15dp"
+                    android:text="6. Account Activity: "
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView26"
+                    android:layout_below="@+id/textView27"
+                    android:layout_marginTop="10dp"
+                    android:text="Instructions placed through the Service or service appointments and service requests made through the Service will be reflected in the data maintained by the Authorized Dealers of TATA MOTORS LIMITED in the same manner as the data maintained in electronic or hard form by telephonic or physical service requests.This App only grfants access to the records available in database of TML and it’s Authorised Dealers and that non- availability of record shall put Dealers and that non-availability of record shall put TML under only obligation / liability. You shall not assume that any appointment has been confirmed until you have received a confirmation of such appointment transaction. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView28"
+                    android:layout_marginTop="10dp"
+                    android:text="7.Termination and Modification:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView35"
+                    android:layout_below="@+id/textView36"
+                    android:layout_marginTop="10dp"
+                    android:text="You understand, acknowledge and agree that TATA MOTORS LIMITED or its Authorized Dealers may in its sole discretion, at any time: "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView37"
+                    android:layout_below="@+id/textView37"
+                    android:layout_marginTop="10dp"
+                    android:text="1. Modify any part of the Service and/or change the terms and conditions upon which the Service is provided to you. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView38"
+                    android:layout_below="@+id/textView38"
+                    android:layout_marginTop="10dp"
+                    android:text="2. Discontinue or terminate the Service in part or in its entirety. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView39"
+                    android:layout_below="@+id/textView39"
+                    android:layout_marginTop="10dp"
+                    android:text="3. Without notice terminate or otherwise limit your access to the Service at any time for any reason, including, without limiting the generality of the foregoing, in the event that we believe that you are in breach of or have failed to comply with any of the Terms and Conditions or in the event that TATA MOTORS LIMITED or its Authorized Dealers believes that you are using the Service illegally, fraudulently or improperly, in which event all rights granted to you hereunder shall immediately cease without notice to you. Termination of your access to the Service shall not alleviate any continuing or unfulfilled obligations which you may have under the Terms and Conditions. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView40"
+                    android:layout_marginTop="10dp"
+                    android:text="8. Important Limitation on Liabilities:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView28"
+                    android:layout_below="@+id/textView33"
+                    android:layout_marginTop="10dp"
+                    android:text="Your sole and exclusive remedy against TATA MOTORS LIMITED, its affiliates, its licensors, its Authorized Dealers and any other third party provider of services for TATA MOTORS SERVICE CONNECT, with respect to these terms and conditions, the Service, the Application, and any Information, and any errors, inaccuracy, omissions or delay therein or thereof, shall be limited to the issuance of corrected information as soon as reasonably practicable following TATA MOTORS LIMITED&apos;s receipt of written notice of such problem from you. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView34"
+                    android:layout_below="@+id/textView34"
+                    android:layout_marginTop="10dp"
+                    android:text="YOU ACKNOWLEDGE THAT THE SERVICE AND THE APPLICATION UTILIZE COMPLEX COMPUTER AND TELECOMMUNICATIONS NETWORKS AND THAT, AS SUCH, CONTINUED, UNINTERRUPTED AND ERROR FREE ACCESS TO THE SERVICE AND/OR THE APPLICATION CANNOT BE GUARANTEED. IN LIGHT OF THE FOREGOING, NEITHER TATA MOTORS LIMITED., ITS AFFILIATES, ITS LICENSORS, ITS AUTHORIZED DEALERS NOR ANY OTHER THIRD PARTY PROVIDER SHALL BE LIABLE IN ANY WAY FOR ANY LOSS OR DAMAGE, DIRECT OR INDIRECT, WHICH MAY ARISE OUT OF ANY OBLIGATION OF TATA MOTORS LIMITED OR ITS AFFILIATES OR ITS LICENSORS OR ITS AUTHORIZED DEALERS UNDER THIS AGREEMENT, FROM ANY OUTAGE, INTERRUPTION, DISCONTINUATION OR DELAY IN THE SERVICE OR THE APPLICATION OR ANY PART THEREOF OR ANY ERROR CONTAINED THEREIN, OR FROM ANY OTHER NON-PERFORMANCE, DEFECTIVE PERFORMANCE OR LATE PERFORMANCE DUE TO ANY CAUSE WHATSOEVER, INCLUDING ERRORS DUE TO MALFUNCTION OF EQUIPMENT, PROGRAMS OR OPERATIONS OF TATA MOTORS LIMITED, ITS AFFILIATES, ITS LICENSORS, ITS AUTHORIZED DEALERS OR ANY THIRD PARTIES, OR NEGLIGENCE OF TATA MOTORS LIMITED., ITS AFFILIATES, ITS LICENSORS, ITS AUTHORIZED DEALERS OR THIRD PARTY PROVIDERS, OPERATORS OR PROGRAMMERS. IN NO EVENT WILL TATA MOTORS LIMITED, ITS AFFILIATES, ITS LICENSORS, ITS AUTHORIZED DEALERS OR ANY THIRD PARTY PROVIDER BE LIABLE FOR ANY PUNITIVE, INCIDENTAL DIRECT, INDIRECT, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, INCLUDING, BUT NOT LIMITED TO, LOSS OF USE, LOSS OF DATA, LOSS OF OPPORTUNITY, HOWEVER CAUSED, RELATED TO, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF, RELIANCE ON, OR INABILITY TO ACCESS OR USE THE SERVICE, THE APPLICATION OR THE INFORMATION, OR FOR ANY DELAY IN OR FAILURE OF TRANSMISSION OF ANY INSTRUCTIONS OR NOTIFICATIONS SENT TO US THROUGH THE SERVICE EVEN IF SUCH PARTY KNEW, SHOULD HAVE KNOWN OR WAS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. "
+                    android:textColor="#ffffff" />
+                
+                   <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView35"
+                    android:layout_marginTop="10dp"
+                    android:text="9 General:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView54"
+                    android:layout_below="@+id/textView55"
+                    android:layout_marginTop="10dp"
+                    android:text="These terms and conditions will be governed by and construed in accordance with the laws of India. You agree that only courts at Mumbai will have exclusive jurisdiction for the determination of any matters arising out of these terms and conditions. This Application is for citizens of India only. You agree that no joint venture, partnership, employment, or agency relationship exists between you and TATA MOTORS LIMITED or its Authorized Dealers as a result of this agreement or use of this Application. TATA MOTORS LIMITED or its Authorized Dealers performance of this agreement is subject to existing laws and legal process, and nothing contained in this agreement is in derogation of TATA MOTORS LIMITED or its Authorized Dealers’ right to comply with governmental, court and law enforcement requests or requirements relating to your use of this Application or information provided to or gathered by TATA MOTORS LIMITED or its Authorized Dealers with respect to such use. Performance of any obligation hereunder by TATA MOTORS LIMITED or its Authorized Dealers shall be excused if prevented by acts of God, public enemy, fire or other casualty, labor dispute, communications, computer, software, hardware or equipment failure, act or omission of any market center, utility, communications service, common carrier, Internet or network access or backbone provider or information provider, or any other circumstances beyond TATA MOTORS LIMITED or its Authorized Dealer&apos;s reasonable control Telephone calls, use of the Service and communication between us, via messaging or any electronic mode including via email, whatsapp, etc., may be recorded. These recordings will be our sole property and may be used for training and commercial purposes or as evidence in the event of a dispute. The Application shall be used / operated only the Registered owner of a Tata vehicle or by a person doing so on directions of the Registered Owner of Tata Vehicle. Any person using the App on behalf of the registered Owner of a Tata Vehicle shall be presumed to be working under direct authority of the Owner. All acts done by any such person shall be deemed to be done by the Registered Owner himself and that all such acts shall be entirely at the account / responsibility of the Registered Owner. If you have any queries in relation to the Terms and Conditions or the Service, please contact us at 1800 209 7979 If any provision of this Agreement is declared to be invalid or unenforceable under any applicable law, the validity or enforceability of the remaining provisions contained herein shall not be affected in any manner whatsoever, and any such invalid or unenforceable provision shall be deemed to be severable and ineffective only to the extent necessary to render the remaining portions of these terms and conditions valid and enforceable. You acknowledge and agree that you have read and understood, and agree to be bound by, the Terms and Conditions, including, without limitation, the terms and conditions contained herein, and the provisions herein that limit the liability of TATA MOTORS LIMITED, its Licensors or its Affiliates or its Authorized Dealers for damages, including, without limitation, damages caused by, arising from or in connection with technical errors affecting the Service. You and we have expressly requested that these terms and conditions and all related documents, including notices, be drawn up only in English."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView56"
+                    android:layout_below="@+id/textView56"
+                    android:layout_marginTop="10dp"
+                    android:text="These terms and conditions form a contract between you and us in respect of the Service. For your own benefit and protection you should read the terms and conditions set out herein carefully before you start to use the Service. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView57"
+                    android:layout_below="@+id/textView57"
+                    android:layout_marginTop="10dp"
+                    android:text="All Trademarks and Copyrights owned by TATA MOTORS LIMITED"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView58"
+                    android:layout_marginTop="10dp"
+                    android:text="10. Privacy Policy:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView6"
+                    android:layout_below="@+id/textView41"
+                    android:layout_marginTop="10dp"
+                    android:text="TATA MOTORS LIMITED&apos;s Statement of Privacy at TATA MOTORS LIMITED we take your privacy seriously. Please read the following to learn more about our terms and conditions. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView35"
+                    android:layout_below="@+id/textView42"
+                    android:layout_marginTop="10dp"
+                    android:text="What the terms and conditions cover: "
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView43"
+                    android:layout_below="@+id/textView43"
+                    android:layout_marginTop="10dp"
+                    android:text="This covers TATA MOTORS LIMITED&apos;s treatment of personally identifiable information that TATA MOTORS LIMITED collects when you use the TATA MOTORS CONNECT application and when you use our services. This policy also covers TATA MOTORS LIMITED&apos;s treatment of any personally identifiable information that TATA MOTORS LIMITED&apos;s shares with you. This policy does not apply to the practices of Companies that TATA MOTORS LIMITED does not own or control or TATA MOTORS LIMITED does not own or employ or manage. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView44"
+                    android:layout_below="@+id/textView44"
+                    android:layout_marginTop="10dp"
+                    android:text="Information Collection and Use:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView45"
+                    android:layout_below="@+id/textView45"
+                    android:layout_marginTop="10dp"
+                    android:text=" TATA MOTORS LIMITED collects personally identifiable information when you register for the TATA MOTORS CARE account, when you choose the services and promotions. TATA MOTORS LIMITED may also receive personally identifiable information from our business partners. When you are registered with TATA MOTORS SERVICE CONNECT, we ask for your name, birth date, anniversary date occupation, PAN, Address only for verification and records purpose. Once you register with TATA MOTORS LIMITED and sign in to our services, you are not anonymous to us. TATA MOTORS LIMITED uses information for three general purposes: to fulfill your requests for certain products and services and to contact you about specials and new products. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView46"
+                    android:layout_below="@+id/textView46"
+                    android:layout_marginTop="10dp"
+                    android:text="Information Sharing and Disclosure:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView47"
+                    android:layout_below="@+id/textView47"
+                    android:layout_marginTop="10dp"
+                    android:text="TATA MOTORS LIMITED will not sell or rent your Personally Identifiable Information to anyone. TATA MOTORS LIMITED will send Personally Identifiable Information about you when: "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView48"
+                    android:layout_below="@+id/textView48"
+                    android:layout_marginTop="10dp"
+                    android:text="We have consent to share the information."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView49"
+                    android:layout_below="@+id/textView49"
+                    android:layout_marginTop="10dp"
+                    android:text="We need to share your information to provide the product or service you have requested. We respond to subpoenas, court orders or legal process. When we find your action on the mobile application violates TATA MOTORS LIMITED terms and condition or any of your usage guidelines for specific products or services. "
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView50"
+                    android:layout_below="@+id/textView50"
+                    android:layout_marginTop="10dp"
+                    android:text="Security:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView51"
+                    android:layout_below="@+id/textView51"
+                    android:layout_marginTop="10dp"
+                    android:text=" Your TATA MOTORS SERVICE CONNECT account information is password-protected for your privacy and security. We have taken adequate measures to secure access to your personal data."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView52"
+                    android:layout_below="@+id/textView52"
+                    android:layout_marginTop="10dp"
+                    android:text="Changes to this Policy:"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView53"
+                    android:layout_below="@+id/textView53"
+                    android:layout_marginTop="10dp"
+                    android:text="TATA MOTORS LIMITED may edit this policy from time to time. If we make any substantial changes, we will notify you by posting a prominent announcement on the Application. However, it shall be the obligation of the user to remain updated with the changes in Terms and Conditions. Even in case the Terms and Conditions are not notified by TML, the contents therein shall be binding on the user. "
+                    android:textColor="#ffffff" />
+
+             
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView1"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="10dp"
+                    android:text="YOU CAN REGISTER FOR THE SERVICE THROUGH YOUR MOBILE DEVICE. BY REGISTERING FOR THE SERVICE, YOU WILL BE TAKEN TO HAVE READ, UNDERSTOOD AND ACCEPTED THESE TERMS AND CONDITIONS IN THE SAME WAY AS IF YOU HAVE SIGNED A PRINTED VERSION AND YOU WILL BE BOUND BY THEM AND THEY WILL CONTINUE TO APPLY EVERY TIME YOU USE THE SERVICE ON YOUR MOBILE DEVICE."
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView59"
+                    android:layout_below="@+id/textView59"
+                    android:layout_marginTop="5dp"
+                    android:text="In these terms and conditions, &apos;we&apos;, &apos;our&apos; and &apos;us&apos; mean TATA MOTORS LIMITED (&apos;TML&apos;) or its Authorized Dealers and &apos;you&apos; and &apos;your&apos; mean the individual who is using the Service. These terms and conditions apply to your use of the Service TATA MOTORS SERVICE CONNECT mobile application), and any information contained therein. If you do not agree with any of the terms set out herein, you should not use the Service, and if you have already installed TATA MOTORS SERVICE CONNECT, mobile application software (the &apos;Application&apos;), you should uninstall the Application from your mobile device."
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

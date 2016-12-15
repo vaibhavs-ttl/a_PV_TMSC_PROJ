@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/brochure_row_container_layout"
+   	android:background="@color/AppBlue"
+   
+   
+    >
+    
+    
+    <LinearLayout 
+        android:id="@+id/inner_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+       
+        android:background="@color/strongblue"
+        >
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayoutRow1"
+        android:orientation="horizontal">
+        
+         <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Model:"
+                    android:textColor="@color/white"
+                    android:textSize="5pt"
+                    android:textStyle="bold" /> -->
+          <TextView
+              android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    android:text="Hexa"
+                    android:textColor="@color/white"
+                    android:textSize="5pt"
+                    android:ellipsize="end"
+                    android:textStyle="bold" />
+        
+        
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayoutRow1"
+        
+        android:orientation="horizontal">
+        
+         
+         <Button
+                android:id="@+id/btn_visit_site"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+               android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_submit"
+                android:text="@string/visit_site"
+                android:textColor="#F5F5F5"
+                
+                android:textSize="10sp" />
+         
+         <Button
+                android:id="@+id/btn_brochure_download"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+               
+                android:background="@drawable/button_submit"
+                android:text="@string/product_brochure_name_btn"
+                android:textColor="#F5F5F5"
+                android:textSize="10sp" />
+        
+        
+    </LinearLayout>
+    
+     
+     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgProductIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/info_and_terms" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"        
+        />
+    
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+
+</RelativeLayout>

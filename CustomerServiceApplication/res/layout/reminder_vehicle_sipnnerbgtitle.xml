@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reminder_vehicle_spinnerText"
+    style="?android:attr/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:paddingLeft="50dp"
+    android:maxLines="1"
+    android:ellipsize="marquee"
+    android:textColor="@color/textcolor" />

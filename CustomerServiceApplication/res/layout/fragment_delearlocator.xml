@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/reltitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/yellow" >
+
+            <ImageView
+                android:id="@+id/GPSImg"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:padding="3dp"
+                android:src="@drawable/dealer_locator" />
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22dp"
+                android:layout_toRightOf="@+id/GPSImg"
+                android:gravity="center_horizontal"
+                android:text="Dealer Locator"
+                android:textColor="#323232"
+                android:textSize="10pt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reltxt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reltitle"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:id="@+id/blayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/titlelayout"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnmap"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/darkgray"
+                    android:gravity="center"
+                    android:text="MAP VIEW"
+                    android:textColor="@color/litegray"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnlist"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/stronggray"
+                    android:gravity="center"
+                    android:text="LIST VIEW"
+                    android:textColor="@color/darkgray"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blayout"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/viewmap"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow" />
+
+                <Button
+                    android:id="@+id/viewlist"
+                    android:layout_width="0dp"
+                    android:layout_height="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/stronggray" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reltxt"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/maplayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:apiKey="AIzaSyC6VY-8PtO1m8clveDV9iapCWdHDA3Z12M" >
+                    </com.google.android.gms.maps.MapView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="50dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/relhide"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toLeftOf="@+id/linearcity" 
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btnhide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="1dp"
+                            android:background="#ffbb00"
+                            android:drawableTop="@drawable/rightarrow"
+                            android:paddingTop="8dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/relhide" >
+
+                     <com.ttl.customersocialapp.InstantAutoComplete
+                            android:id="@+id/selectstate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:alpha="0.6"
+                            android:background="@drawable/bginstantautocomplete"
+                            android:drawableRight="@drawable/downarrow"
+                            android:dropDownHeight="wrap_content"
+                            android:hint="Select State"
+                            android:padding="10dp"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#D9D9D9"
+                            android:textSize="15sp" >
+
+                            <requestFocus />
+                        </com.ttl.customersocialapp.InstantAutoComplete>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reldata"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/relhide1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toLeftOf="@+id/linearcity" 
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/btnhide1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="1dp"
+                            android:background="#ffbb00"
+                            android:drawableTop="@drawable/rightarrow"
+                            android:paddingTop="8dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/relhide1" >
+
+                        
+                       
+
+                        <com.ttl.customersocialapp.InstantAutoComplete
+                            android:id="@+id/selectcity"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:alpha="0.6"
+                            android:background="@drawable/bginstantautocomplete"
+                            android:drawableRight="@drawable/downarrow"
+                            android:dropDownHeight="wrap_content"
+                            android:hint="Select City"
+                            android:padding="10dp"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#D9D9D9"
+                            android:textSize="15sp" />
+                         
+                         <com.ttl.customersocialapp.InstantAutoComplete
+                            android:id="@+id/selectppl"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:alpha="0.6"
+                            android:background="@drawable/bginstantautocomplete"
+                            android:drawableRight="@drawable/downarrow"
+                            android:dropDownHeight="wrap_content"
+                            android:hint="Select Model"
+                            android:padding="10dp"
+                            android:textColor="#ffffff"
+                            android:textColorHint="#D9D9D9"
+                            android:textSize="15sp" >
+
+                            <requestFocus />
+                        </com.ttl.customersocialapp.InstantAutoComplete>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rellistview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/reldelear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#278cc7" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:text="My Preferred Dealer"
+                        android:textColor="#ffffff" />
+                    <ImageView
+	                    android:id="@+id/dealer_pref"
+	                    android:layout_width="35dp"
+	                    android:layout_height="35dp"
+	                    android:layout_alignParentRight="true"
+	                    android:layout_centerVertical="true"
+	                    android:layout_margin="5dp"
+	                    android:padding="2dp"
+	                    android:src="@drawable/myprefereddealer" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/delearloc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/reldelear"
+                    android:dividerHeight="2dp" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

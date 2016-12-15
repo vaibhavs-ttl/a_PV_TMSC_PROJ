@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+     android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="top|center"
+    android:layout_gravity="center"
+    android:background="#EEF2F5" >
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/yellow">
+	        
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/edit_quantity"
+	        android:textSize="20sp"
+	    	android:padding="5dp"
+	        
+	        android:gravity="center"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/white"/>
+	    
+	    <ImageView
+	        android:id="@+id/dismiss_update_dialog"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/close"
+	        android:scaleType="fitXY" />
+	
+	</RelativeLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="top|center"
+	   >
+
+		<TextView
+		    android:id="@+id/dialog_labour_spare_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:textSize="14sp" />
+	
+		<EditText
+		    android:id="@+id/quantity_dialog_box"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:ems="10"
+		    android:singleLine="true"
+	    	android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		   	android:inputType="number"
+		   	android:digits="0123456789"
+		   	android:maxLength="5"
+		   	
+		    android:imeOptions="actionDone"
+		    android:background="@drawable/anim_edittext_layout"
+		    android:hint="@string/quantity"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"/>
+
+		<!-- <CheckBox
+		    android:id="@+id/checkBox1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="60dp"
+		    android:text="@string/terms"/> -->
+		
+		  <Button
+		            android:id="@+id/update_quantity_btn"
+		            android:layout_marginTop="10dp"
+		            android:layout_width="130dp"
+		            android:layout_height="wrap_content"
+		            android:textColor="#F5F5F5"
+		            android:text="@string/update"
+		            android:textSize="15sp"
+		            android:background="@drawable/button_submit"
+		            android:layout_gravity="center_horizontal"
+		            android:layout_marginBottom="10dp" />
+	    		
+	
+	</LinearLayout>
+
+
+</LinearLayout>

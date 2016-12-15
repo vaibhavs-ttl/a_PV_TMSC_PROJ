@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+android:id="@+id/custom_parent_row"
+     >
+
+    
+     <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        
+        android:background="@color/white"/>
+    
+    <TextView
+        android:id="@+id/selected_spare_labour_type"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        
+       
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="@string/type"
+        android:textSize="12sp" />
+    <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/selected_spare_labour_desc"
+        android:layout_width="65dp"
+       android:layout_height="wrap_content"
+        
+       
+        android:ellipsize="end"
+        android:padding="5dp"
+      
+        android:text="@string/desc"
+        android:gravity="center"
+        android:textSize="12sp" />
+   <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+    
+
+    
+<EditText
+        android:id="@+id/selected_spare_labour_qty"
+        android:layout_width="40dp"
+     	android:layout_height="wrap_content"
+     
+       
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:singleLine="true"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:text="@string/qty"
+        android:textSize="12sp" />
+<View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+    
+    <TextView
+        android:id="@+id/selected_spare_labour_value"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+      
+        
+        android:ellipsize="end"
+        android:padding="5dp"
+    
+        android:text="@string/value"
+        android:textSize="10sp" />
+    <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+    
+    
+    
+   <ImageView 
+       
+       android:id="@+id/selected_spare_labour_editbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+         
+        android:src="@drawable/edit_white"
+       
+        
+       
+       />
+   <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+      <ImageView 
+       
+       android:id="@+id/selected_spare_labour_deletebox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+                 
+        android:src="@drawable/cancel_white"	
+        
+       
+       />
+      <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+    
+    
+    
+    
+    
+</LinearLayout>

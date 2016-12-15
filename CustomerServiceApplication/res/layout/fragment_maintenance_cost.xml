@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="@drawable/background"
+    tools:context=".MaintenanceCostFragment" >
+
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:src="@drawable/maintenance_cost" />
+
+        <TextView
+            android:id="@+id/txtmaintensnce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:text="Maintenance Cost"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlelayout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/spinner_regno"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="2dp"
+                android:entries="@array/reg_chassis"
+                android:gravity="left|center"
+                 android:background="@drawable/costspinner"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnsch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/darkblue"
+                android:gravity="center"
+                android:text="Scheduled Services"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            
+            <View 
+                android:layout_width="2dp" 
+                android:layout_height="match_parent"
+                android:background="@color/darkblue"/>
+
+            <Button
+                android:id="@+id/btnbodyshop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:background="@color/verysoftblue"
+                android:gravity="center"
+                android:text="Body Shop"
+                android:textColor="@color/darkblue"
+                android:textSize="14sp" />
+			 <View 
+                android:layout_width="2dp" 
+                android:layout_height="match_parent"
+                android:background="@color/darkblue"/>
+            <Button
+                android:id="@+id/btnunshedules"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:background="@color/verysoftblue"
+                android:gravity="center"
+                android:text="Other Repairs"
+                android:textColor="@color/darkblue"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/litegray"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btngraph"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:background="@color/darkblue"
+                    android:gravity="center"
+                    android:text="CHART"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnlist"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:background="@color/verysoftblue"
+                    android:gravity="center"
+                    android:text="LIST"
+                    android:textColor="@color/darkblue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llgraph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/charttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout1"
+                    android:background="@color/litegray"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="ANNUAL EXPENDITURE ON MAINTENANCE"
+                    android:textColor="@color/gray_dark" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/litegray"
+                     >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="1dp"
+                        android:src="@drawable/blackrs" />
+
+                 <!--    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="9pt"
+                        android:layout_marginRight="2dp"
+                        android:text="#" /> -->
+
+                </RelativeLayout>
+
+                <com.github.mikephil.charting.charts.CombinedChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/charttitle"
+                    android:background="@color/litegray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lllist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/litegray"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/txttitleyear"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        android:text="Year"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txttitlers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="Expenditure \n\ (in Rs)"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/txttitlevisits"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:text="No. Visits"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/litegray"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

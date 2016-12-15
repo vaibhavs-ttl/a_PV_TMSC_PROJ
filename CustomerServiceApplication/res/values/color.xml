@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="AppBlue">#348ECD</color>
+    <color name="list_item_title">#000000</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#00C9F9</color>
+    <color name="list_divider">#D5DFE0</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+ 	<color name = "hintcolor">#BBC2C6</color>
+    <color name="buttontextcolor">#AF5800</color>
+    <color name="actionbar">#125894</color>
+    <color name="blue_light_transparent">#3393c6e3</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="textcolor">#162840</color>
+    <color name="orange">#ff8400</color>
+    <color name="blue_dark">#014e7b</color>
+    <color name="blue_medium">#278cc7</color>
+    <color name="blue_medium_transparent">#33278cc7</color>
+    <color name="blue_light">#93c6e3</color>
+    <color name="gray_dark">#323232</color>
+    <color name="gray_medium">#929292</color>
+    <color name="gray_light">#D4D4D4</color>
+    <color name="yellow">#ffbb00</color>
+    <color name="red">#ff0000</color>
+    <color name="royalblue">#123a96</color>
+    <color name="transparent">#00000000</color>
+      <color name="translucent_blue">#80318ecd</color>
+    <color name="activity_bg">#e4e5e5</color>
+        <color name="alfa">#80278cc7</color>
+      <color name="darkblue">#014e7b</color>
+    <color name="strongblue">#278cc7</color>
+    <color name="verysoftblue">#93c6e3</color>
+	<color name = "lightorang">#FFAA65</color>
+    <color name="darkgray">#323232</color>
+    <color name="stronggray">#929292 </color>
+    <color name="litegray">#F5F5F5 </color>
+      <color name="navyblue">#0B508B</color>
+      
+       <!-- service history -->
+    <color name="free">#A6E4F1</color>
+    <color name="body">#F5E876</color>
+    <color name="paid">#F7B885</color>
+    <color name="unscheduled">#EAA0A1</color>
+</resources>

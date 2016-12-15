@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:orientation="horizontal" 
+    android:id="@+id/labourPartRow"
+    >
+    <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/labour_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/desc"
+        android:textSize="12sp" />
+    
+    <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/labour_qty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:ellipsize="end"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/default_qty"
+        android:textSize="12sp" />
+<View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+    
+    
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:orientation="horizontal"
+               
+        >
+    
+    <CheckBox
+        android:id="@+id/labour_select_box"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@drawable/estimate_state_check"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="120dp"
+         android:saveEnabled="true"
+        />
+    
+    </LinearLayout>
+    <View 
+        android:layout_height="match_parent"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

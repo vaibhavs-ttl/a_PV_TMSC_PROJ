@@ -1,0 +1,454 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.ttl.customersocialapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterUserActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/small_tataservice_logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="Registration"
+        android:textColor="@color/white"
+        android:textSize="12pt" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageView2" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtfirstnameout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtfirstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*First Name"
+                     android:digits="0123456789AQZWSXEDCRFVTGBYHNUJMIKOLP.abcdefghijklmnopqrstuvwxyz"
+                     android:singleLine="true"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtlastnameout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtfirstnameout"
+                android:layout_alignRight="@+id/txtfirstnameout"
+                android:layout_below="@+id/txtfirstnameout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtlastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*Last Name"
+                    android:inputType="textCapSentences"
+                     android:digits="0123456789AQZWSXEDCRFVTGBYHNUJMIKOLP.abcdefghijklmnopqrstuvwxyz"
+                     android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <LinearLayout
+                android:id="@+id/blayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/txtlastnameout"
+                android:layout_alignRight="@+id/txtlastnameout"
+                android:layout_below="@+id/txtlastnameout"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/male"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/malenormal"
+                    android:selectAllOnFocus="true"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/female"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/male"
+                    android:layout_toRightOf="@+id/male"
+                    android:layout_weight="1"
+                    android:background="@drawable/femalenormal"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtcontactnumberout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/blayout"
+                android:layout_alignRight="@+id/blayout"
+                android:layout_below="@+id/blayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtcontactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*Contact Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtaltcontactnumberout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtcontactnumberout"
+                android:layout_alignRight="@+id/txtcontactnumberout"
+                android:layout_below="@+id/txtcontactnumberout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtaltcontactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="Alternate Contact Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtemailidout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtaltcontactnumberout"
+                android:layout_alignRight="@+id/txtaltcontactnumberout"
+                android:layout_below="@+id/txtaltcontactnumberout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtemailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*Email ID"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtaddressout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtemailidout"
+                android:layout_alignRight="@+id/txtemailidout"
+                android:layout_below="@+id/txtemailidout"
+                android:layout_marginTop="10dp"
+                 android:maxLines="3"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*Address"
+                    android:inputType="textCapSentences"
+                    android:maxLines="4"
+                    android:paddingLeft="10dp"
+                    android:maxLength="254"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/spinstateout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtaddressout"
+                android:layout_alignRight="@+id/txtaddressout"
+                android:layout_below="@+id/txtaddressout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_sipnner"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <com.ttl.customersocialapp.InstantAutoComplete
+                    android:id="@+id/spinstate"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:hint="*Select State"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/spincityout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinstateout"
+                android:layout_alignRight="@+id/spinstateout"
+                android:layout_below="@+id/spinstateout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_sipnner"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <com.ttl.customersocialapp.InstantAutoComplete
+                    android:id="@+id/spincity"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:hint="*Select City"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtpincodeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spincityout"
+                android:layout_alignRight="@+id/spincityout"
+                android:layout_below="@+id/spincityout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtpincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*Pincode"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtuseridout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtpincodeout"
+                android:layout_alignRight="@+id/txtpincodeout"
+                android:layout_below="@+id/txtpincodeout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtuserid"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*User ID"
+                	android:singleLine="true"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="10dp"
+                    android:digits="0123456789AQZWSXEDCRFVTGBYHNUJMIKOLP_abcdefghijklmnopqrstuvwxyz"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" />
+            </com.ttl.customersocialapp.FloatLabelLayout>
+
+            <com.ttl.customersocialapp.FloatLabelLayout
+                android:id="@+id/txtpasswordout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtuseridout"
+                android:layout_alignRight="@+id/txtuseridout"
+                android:layout_below="@+id/txtuseridout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/anim_edittext_layout"
+                android:paddingLeft="10dp"
+                app:floatLabelTextAppearance="@style/myFloatLabel" >
+
+                <EditText
+                    android:id="@+id/txtpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/edittext_layout"
+                    android:ems="10"
+                    android:hint="*Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hintcolor" >
+                </EditText>
+            </com.ttl.customersocialapp.FloatLabelLayout>
+            
+            <LinearLayout
+                android:id="@+id/passwordlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpasswordout"
+                android:layout_marginTop="5dip"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/passwordpolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/passwordpolicy"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checklayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passwordlayout"
+                android:layout_marginTop="4dip"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:id="@+id/txtterms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttonlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checklayout"
+                android:layout_marginTop="10dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="5dip"
+                android:weightSum="4" >
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border_rectangle"
+                    android:text="CANCEL"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_border_rectangle"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
